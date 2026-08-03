@@ -1,0 +1,37 @@
+/* design system values */
+
+:root {
+  /* Colors */
+  --color-background: #faf9f5;
+  --color-surface: #ffffff;
+  --color-text: #000;    
+  --color-muted: #686862;
+  --color-accent: #7D9277;
+  --color-accent-light: #dce4d8;
+
+  /* Borders and shadows */
+  --border-standard: 1px solid var(--color-text);
+  --border-light: 1px solid var(--color-accent);
+  --shadow-small: 4px 4px 0 var(--color-text);
+  --shadow-large: 7px 7px 0 var(--color-text);
+
+  /* Layout */
+  --page-max-width: 1440px;
+  --page-padding: 2.5rem;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 5rem;
+
+  /* Typography */
+  --font-body: Arial, Helvetica, sans-serif;
+  --font-display: "Arial Narrow", Arial, sans-serif;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-standard: 250ms ease;
+}
