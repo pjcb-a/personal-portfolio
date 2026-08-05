@@ -1,0 +1,27 @@
+.site-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+
+  width: 100%;
+  padding: 60px 30px;
+
+  background-color: var(--color-background);
+}
+
+.header-data {
+  margin: 0;
+
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.header-location {
+  justify-self: start;
+}
+
+.header-year {
+  justify-self: end;
+}
