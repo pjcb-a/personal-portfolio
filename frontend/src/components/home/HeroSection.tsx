@@ -1,4 +1,5 @@
 import { UserRound, ArrowUpRight, ArrowDown } from "lucide-react";
+import { Tools } from "../../data/tools";
 
 export default function HeroSection() {
     return(
@@ -30,7 +31,21 @@ export default function HeroSection() {
             </div>
 
             <div className="tools">
-                
+                <div className="tool-loop">
+                    <span>TOOLS/</span>
+
+                        <ul className="footer-socials">
+                            {Tools.map((item) => {
+                                const Tool = item.icon;
+
+                                return (
+                                    <li key={item.id}>                                               
+                                        <Tool />
+                                    </li>
+                                );
+                            })}
+                        </ul>
+                </div>
             </div>
         </div>
     );
