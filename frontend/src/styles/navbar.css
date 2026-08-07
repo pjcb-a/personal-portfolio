@@ -47,6 +47,8 @@
 .nav-link:hover {
     border: var(--border-standard);
     background-color: var(--color-accent);
+    transform: translate(1px, 1px);
+
 }
 
 .nav-link.active,

@@ -4,6 +4,12 @@ import { BrowserRouter } from 'react-router'
 
 import App from './App'
 
+import "@fontsource-variable/archivo/wght.css";
+
+import "@fontsource/barlow-condensed/600.css";
+import "@fontsource/barlow-condensed/700.css";
+import "@fontsource/barlow-condensed/800.css";
+
 import "./styles/reset.css";
 import "./styles/variables.css";
 import "./styles/globals.css";

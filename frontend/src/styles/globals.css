@@ -1,6 +1,7 @@
  /* overall website appearance */
 
 html {
+  scroll-behavior: smooth;
   min-width: 320px;
   background-color: var(--color-background);
 }
