@@ -8,10 +8,11 @@
 .footer-logo,
 .footer-heading,
 .footer-back {
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
 }
 
 .footer-main {
+  margin: 0 1em;
   display: grid;
   grid-template-columns:
     minmax(180px, 1.1fr)
@@ -39,6 +40,10 @@
   font-weight: 800;
   line-height: 1;
   letter-spacing: 0.01em;
+}
+
+.footer-logo:hover {
+  color: var(--color-accent);
 }
 
 .footer-description {
@@ -86,7 +91,7 @@
 
 .footer-social-link:hover {
   background-color: var(--color-accent);
-  transform: translate(2px, 2px);
+  transform: var(--transition-fast);
   box-shadow: 1px 1px 0 var(--color-text);
 }
 
@@ -152,15 +157,17 @@
 
   box-shadow: 4px 4px 0 var(--color-text);
 
-  font-family: var(--font-display);
+  font-family: var(--font-heading);
   font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.12em;
 }
 
 .footer-back:hover {
-  transform: translate(2px, 2px);
-  box-shadow: 2px 2px 0 var(--color-text);
+  transform: var(--transition-fast);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  box-shadow: 2px 2px 0 var(--color-accent);
 }
 
 /* Bottom row */

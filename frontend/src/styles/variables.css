@@ -1,5 +1,14 @@
 /* design system values */
 
+/* Define local Norwester font */
+@font-face {
+  font-family: 'Norwester';
+  src: url('../assets/fonts/norwester.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 :root {
   /* Colors */
   --color-background: #faf9f5;
@@ -16,15 +25,12 @@
   --shadow-large: 7px 7px 0 var(--color-text);
 
   /* Typography */
-  --font-body:
-    "Archivo Variable",
-    Arial,
-    Helvetica,
+    --font-heading:
+    'Norwester',
     sans-serif;
 
-  --font-display:
-    "Barlow Condensed",
-    "Arial Narrow",
+  --font-body:
+    "Manrope Variable",
     sans-serif;
 
   /* Transitions */
