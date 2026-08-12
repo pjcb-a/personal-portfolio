@@ -25,12 +25,3 @@ h3 {
 p {
   max-width: 70ch;
 }
-
-.text-uppercase {
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-}
-
-.text-muted {
-  color: var(--color-muted);
-}

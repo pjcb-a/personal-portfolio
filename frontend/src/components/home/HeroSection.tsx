@@ -1,63 +1,123 @@
+import { useEffect, useRef } from "react";
 import { UserRound, ArrowUpRight, ArrowDown } from "lucide-react";
 import { Tools } from "../../data/tools";
 
-// import { animate, scrambleText } from "animejs";
+import Button from "../common/Button";
+
+import { animate, createScope, scrambleText } from "animejs";
 import "../../styles/home/herosection.css"
 
 export default function HeroSection() {
+    
+    const heroRef = useRef<HTMLDivElement>(null);
+    const cursor = ['░▒▓█'];
 
-    // animate('p', {
-    //     innerHTML: scrambleText(),
-    //     loop: true, 
-    //     loopDelay: 1000,
-    // });
+    useEffect(() => {
+  if (!heroRef.current) return;
+
+  const scope = createScope({
+    root: heroRef,
+  }).add(() => {
+
+    animate(".tool-track", {
+      x: ["-50%", "0%"],
+      duration: 18000,
+      ease: "linear",
+      loop: true,
+    });
+
+  });
+
+  return () => {
+    scope.revert();
+  };
+}, []);
+
+    animate('.hero-intro', {
+        innerHTML: scrambleText(),
+        loop: true, 
+        loopDelay: 1000,
+    });
 
     return(
-        <div className="home-hero">
+        <div ref={heroRef} className="home-hero">
             <div className="main-hero">
                 <p>
                     <UserRound 
                     className="hero-icon"
                     size={15}
                     /> 
-                    <span className="hero-introduction">
+                    <span className="hero-intro">
                         HELLO, I’M JP — DESIGNING VISUALS, BUILDING EXPERIENCES
                     </span>
                 </p>
             </div>
+            
+        <div className="hero-content">
 
             <div className="hero-role">
                 <h1 className="hero-title">
                    <span className="hero-title-primary"> GRAPHIC DESIGNER </span>
-                <br/>
+    
                     <span className="hero-title-secondary"> &amp; FRONTEND DEVELOPER</span>
                 </h1>
             </div>
 
-            <div className="hero-role-description">
+            <div className="description">
                 <p>I turn ideas into clear visual systems and responsive digital experiences that feel intentional, useful, and human.</p>
             </div>
+        </div>
 
             <div className="hero-btn">
-                <button>View Projects <ArrowUpRight/></button>
-                <button>Download Resume <ArrowDown/></button>
+                <Button
+                label="View Projects"
+                href="/projects"
+                variant="primary"
+                icon={<ArrowUpRight size={16} />}
+                />
+
+                <Button
+                label="Download Resume"
+                href="/resume.pdf"
+                variant="secondary"
+                icon={<ArrowDown size={16} />}
+                /> 
             </div>
 
             <div className="tools">
+                <span className="tool-label">
+                    TOOLS/
+                </span>
+
                 <div className="tool-loop">
-                    <span>TOOLS/</span>
+                    <div className="tool-track">
 
-                        <ul className="footer-socials">
-                            {Tools.map((item) => {
-                                const Tool = item.icon;
+                    <ul className="tool-group">
+                        {Tools.map((item) => {
+                        const Tool = item.icon;
 
-                                return (
-                                    <li key={item.id}>                                               
-                                        <Tool />
-                                    </li>
-                                );
-                            })}
-                        </ul>
+                        return (
+                            <li key={`first-${item.id}`}>
+                            <Tool size={25}/>
+                            </li>
+                        );
+                        })}
+                    </ul>
+
+                    <ul
+                        className="tool-group"
+                    >
+                        {Tools.map((item) => {
+                        const Tool = item.icon;
+
+                        return (
+                            <li key={`second-${item.id}`}>
+                            <Tool size={25}/>
+                            </li>
+                        );
+                        })}
+                    </ul>
+                    </div>
                 </div>
             </div>
         </div>

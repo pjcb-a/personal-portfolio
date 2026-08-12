@@ -8,7 +8,7 @@ function NavBar() {
     return(
         <nav className="navigation">
             <div className="navbar-logo">
-                <Link to="/"><span className="navbar-logo-highlight">jp</span>.dev</Link>
+                <Link to="/home"><span className="navbar-logo-highlight">jp</span>.dev</Link>
             </div>
 
            <ul className="navbar-links">

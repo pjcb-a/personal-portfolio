@@ -11,7 +11,7 @@ export default function Footer() {
             <div className="footer-main">
               <div className="footer-brand">
                 
-                <p className="footer-logo"> <Link to="/"> JP.DEV</Link></p>
+                <p className="footer-logo"> <Link to="/home"> JP.DEV</Link></p>
                 
 
                 <p className="footer-description">Designing with purpose.<br />
@@ -41,7 +41,7 @@ export default function Footer() {
                 className="footer-links"
                 aria-label="Footer navigation"
               >
-                <h2 className="footer-heading">Quick Links</h2>
+                <h2 className="footer-heading"><Link to="/https://www.linkedin.com/in/john-paul-jacob-12b064407/">Quick Links</Link></h2>
 
                 <ul className="footer-link-list">
                   <li>
