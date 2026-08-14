@@ -4,14 +4,23 @@ import { Tools } from "../../data/tools";
 
 import Button from "../common/Button";
 
-import { animate, createScope, scrambleText } from "animejs";
+import { animate, createScope, scrambleText, utils } from "animejs";
 import "../../styles/home/herosection.css"
 
 export default function HeroSection() {
     
     const heroRef = useRef<HTMLDivElement>(null);
-    const cursor = ['░▒▓█'];
 
+// INTRO ANIMATION
+    const [ $p ] = utils.$('.hero-intro');
+        animate($p, {
+            innerHTML: scrambleText({cursor: '░▒▓█'}),
+            loop: true,
+            loopDelay: 6000,
+        });
+    
+
+// TOOLS SLIDING ANIMATION
     useEffect(() => {
   if (!heroRef.current) return;
 
@@ -33,11 +42,7 @@ export default function HeroSection() {
   };
 }, []);
 
-    animate('.hero-intro', {
-        innerHTML: scrambleText(),
-        loop: true, 
-        loopDelay: 1000,
-    });
+
 
     return(
         <div ref={heroRef} className="home-hero">
@@ -99,6 +104,7 @@ export default function HeroSection() {
                         return (
                             <li key={`first-${item.id}`}>
                             <Tool size={25}/>
+                            <p>{item.id}</p>
                             </li>
                         );
                         })}
@@ -112,7 +118,8 @@ export default function HeroSection() {
 
                         return (
                             <li key={`second-${item.id}`}>
-                            <Tool size={25}/>
+                            <Tool size={23}/>
+                            <p>{item.id}</p>
                             </li>
                         );
                         })}

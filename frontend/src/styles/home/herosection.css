@@ -128,4 +128,9 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    gap: 0.5rem;
+}
+
+.tool-group p {
+    font-size: 0.9rem;
 }
