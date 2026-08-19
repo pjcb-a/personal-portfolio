@@ -1,0 +1,262 @@
+.home-about {
+    position: relative;
+    padding: 1rem 3rem 6rem;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+.home-about-panel {
+    width: min(100%, 1180px);
+    margin-inline: auto;
+    background-color: var(--color-surface);
+    border: var(--border-standard);
+    box-shadow: var(--shadow-large);
+}
+
+.home-about-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1.5rem 1.75rem;
+    background-color: var(--color-accent);
+    border-bottom: var(--border-standard);
+}
+
+.home-about-header h2,
+.home-about-header p {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.home-about-header h2 {
+    position: relative;
+    padding-left: 1rem;
+}
+
+.home-about-header h2::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 0.25rem;
+    background-color: var(--color-text);
+}
+
+.home-about-header p {
+    flex-shrink: 0;
+    color: var(--color-text);
+}
+
+.home-about-content {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 1fr);
+}
+
+.home-about-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2.5rem 1.75rem 2rem;
+}
+
+.home-about-name {
+    max-width: none;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+}
+
+.home-about-name strong {
+    font-weight: 800;
+}
+
+.home-about-copy {
+    max-width: 28rem;
+    font-size: 1rem;
+    line-height: 1.45;
+    letter-spacing: 0.18em;
+}
+
+.home-about-action {
+    margin-top: auto;
+}
+
+.home-about-action .button {
+    width: min(100%, 18rem);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    font-weight: 800;
+    letter-spacing: 0;
+}
+
+.home-about-action .button:hover,
+.home-about-action .button:focus-visible {
+    background-color: var(--color-accent-light);
+    color: var(--color-text);
+    transform: translate(-2px, -2px);
+}
+
+.home-about-highlights {
+    display: grid;
+    border-left: var(--border-standard);
+}
+
+.home-about-highlight {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    min-height: 7.2rem;
+    padding: 1.25rem 1.25rem;
+    background-color: var(--color-accent-light);
+    border-bottom: var(--border-standard);
+    overflow: hidden;
+    transition:
+        background-color var(--transition-standard),
+        color var(--transition-standard),
+        padding-left var(--transition-standard);
+}
+
+.home-about-highlight:last-child {
+    border-bottom: 0;
+}
+
+.home-about-highlight::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 0;
+    background-color: var(--color-accent);
+    transition: width var(--transition-standard);
+}
+
+.home-about-highlight-text {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    gap: 0.65rem;
+}
+
+.home-about-highlight strong {
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.home-about-highlight span span {
+    max-width: 34rem;
+    font-size: 0.88rem;
+    line-height: 1.35;
+}
+
+.home-about-highlight-icon {
+    position: relative;
+    z-index: 1;
+    flex-shrink: 0;
+    opacity: 0;
+    transform: translate(-0.5rem, 0.5rem);
+    transition:
+        opacity var(--transition-standard),
+        transform var(--transition-standard);
+}
+
+.home-about-highlight:hover,
+.home-about-highlight:focus-visible {
+    background-color: var(--color-surface);
+    padding-left: 1.75rem;
+}
+
+.home-about-highlight:hover::before,
+.home-about-highlight:focus-visible::before {
+    width: 0.35rem;
+}
+
+.home-about-highlight:hover .home-about-highlight-icon,
+.home-about-highlight:focus-visible .home-about-highlight-icon {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.home-about-highlight:focus-visible {
+    outline: 2px solid var(--color-text);
+    outline-offset: -0.5rem;
+}
+
+@media (max-width: 900px) {
+    .home-about {
+        padding: 1rem 1.5rem 4.5rem;
+    }
+
+    .home-about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .home-about-highlights {
+        border-top: var(--border-standard);
+        border-left: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .home-about {
+        padding: 1rem 1rem 4rem;
+    }
+
+    .home-about-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.75rem;
+        padding: 1.25rem;
+    }
+
+    .home-about-header h2,
+    .home-about-header p {
+        font-size: 1.55rem;
+    }
+
+    .home-about-intro {
+        gap: 1.5rem;
+        padding: 1.5rem 1.25rem;
+    }
+
+    .home-about-copy {
+        font-size: 0.92rem;
+        letter-spacing: 0.1em;
+    }
+
+    .home-about-highlight {
+        min-height: 0;
+        padding: 1.15rem 1rem;
+    }
+
+    .home-about-highlight strong {
+        font-size: 1.1rem;
+    }
+
+    .home-about-highlight span span {
+        font-size: 0.82rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .home-about-highlight,
+    .home-about-highlight::before,
+    .home-about-highlight-icon,
+    .home-about-action .button {
+        transition: none;
+    }
+
+    .home-about-highlight:hover,
+    .home-about-highlight:focus-visible,
+    .home-about-highlight:hover .home-about-highlight-icon,
+    .home-about-highlight:focus-visible .home-about-highlight-icon,
+    .home-about-action .button:hover,
+    .home-about-action .button:focus-visible {
+        transform: none;
+    }
+}
