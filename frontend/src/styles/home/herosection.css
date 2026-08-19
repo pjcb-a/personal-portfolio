@@ -1,5 +1,6 @@
 .home-hero {
     width: 100%;
+    overflow-x: clip;
     background-color: var(--color-background);
     color: var(--color-text);
 }
@@ -82,6 +83,8 @@
     width: 100%;
     margin-top: 2.5rem;
     overflow: hidden;
+    overflow: clip;
+    contain: paint;
     padding: 0.4rem;
     background-color: var(--color-accent);
     border: var(--border-standard);
@@ -101,12 +104,19 @@
 }
 
 .tool-loop {
+    position: relative;
     flex: 1;
     min-width: 0;  
+    min-height: 35px;
     overflow: hidden;
+    overflow: clip;
+    contain: paint;
 }
 
 .tool-track {
+    position: absolute;
+    inset-block: 0;
+    left: 0;
     display: flex;
     align-items: center;
     width: max-content;
@@ -133,4 +143,38 @@
 
 .tool-group p {
     font-size: 0.9rem;
+}
+
+@media (max-width: 640px) {
+    .tool-label {
+        padding-inline: 0.75rem;
+        font-size: 0.85rem;
+    }
+
+    .tool-loop {
+        min-height: 0;
+    }
+
+    .tool-track {
+        position: static;
+        flex-wrap: wrap;
+        width: 100%;
+        row-gap: 0.75rem;
+        transform: none !important;
+    }
+
+    .tool-group {
+        flex-wrap: wrap;
+        gap: 1.2rem;
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .tool-group + .tool-group {
+        display: none;
+    }
+
+    .tool-group p {
+        font-size: 0.8rem;
+    }
 }

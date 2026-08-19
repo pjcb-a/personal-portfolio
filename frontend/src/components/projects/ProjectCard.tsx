@@ -97,7 +97,7 @@ export default function ProjectCard({
                                             className="project-card-tool"
                                             key={toolName}
                                             title={tool.label}
-                                            aria-label={tool.label}
+                                            
                                         >
                                             <ToolIcon size={32} aria-hidden="true" focusable="false" />
                                         </li>

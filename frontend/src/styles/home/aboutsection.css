@@ -1,12 +1,12 @@
 .home-about {
     position: relative;
-    padding: 1rem 3rem 6rem;
+    padding: 1.875rem clamp(1rem, 2.8vw, 3rem) 6rem;
     background-color: var(--color-background);
     color: var(--color-text);
 }
 
 .home-about-panel {
-    width: min(100%, 1180px);
+    width: min(100%, 1635px);
     margin-inline: auto;
     background-color: var(--color-surface);
     border: var(--border-standard);
@@ -189,7 +189,7 @@
 
 @media (max-width: 900px) {
     .home-about {
-        padding: 1rem 1.5rem 4.5rem;
+        padding: 1.5rem 1.5rem 4.5rem;
     }
 
     .home-about-content {
@@ -204,7 +204,7 @@
 
 @media (max-width: 640px) {
     .home-about {
-        padding: 1rem 1rem 4rem;
+        padding: 1.25rem 1rem 4rem;
     }
 
     .home-about-header {

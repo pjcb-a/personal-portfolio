@@ -1,14 +1,17 @@
 import "../../styles/statusbar.css";
 
-export default function ProfileStatusBar() {
-    const profileTag = "profile.env.example";
+interface StatusProps {
+    index: string  
+}
+
+export default function StatusBar({index}: StatusProps) {
 
     return (
-        <div className="profile-status-bar" aria-hidden="true">
-            <div className="profile-status-bar-inner">
-                <span>{profileTag}</span>
+        <div className="status-bar" aria-hidden="true">
+            <div className="status-bar-inner">
+                <span>{index}</span>
 
-                <div className="profile-status-bar-controls">
+                <div className="status-bar-controls">
                     <span />
                     <span />
                     <span />

@@ -25,3 +25,24 @@
 .header-year {
   justify-self: end;
 }
+
+@media (max-width: 760px) {
+  .site-header {
+    grid-template-columns: 1fr;
+    justify-items: stretch;
+    gap: 0.8rem;
+    padding: 2rem 1rem;
+    overflow: hidden;
+  }
+
+  .header-data {
+    justify-self: center;
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  .header-location,
+  .header-year {
+    justify-self: center;
+  }
+}

@@ -39,7 +39,6 @@ export default function Footer() {
 
               <nav
                 className="footer-links"
-                aria-label="Footer navigation"
               >
                 <h2 className="footer-heading"><Link to="/https://www.linkedin.com/in/john-paul-jacob-12b064407/">Quick Links</Link></h2>
 

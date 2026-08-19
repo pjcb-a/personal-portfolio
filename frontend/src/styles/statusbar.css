@@ -1,52 +1,50 @@
-.profile-status-bar {
-    padding: 0 3rem;
-    background-color: var(--color-background);
+.status-bar {
+    width: 100%;
+    background-color: var(--color-text);
+    border-top: var(--border-light);
+    border-bottom: var(--border-light);
     color: var(--color-accent);
 }
 
-.profile-status-bar-inner {
+.status-bar-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: min(100%, 1180px);
-    min-height: 3rem;
-    margin-inline: auto;
-    padding: 0.45rem 1rem;
+    width: 100%;
+    min-height: 3.125rem;
+    padding: 0.45rem clamp(1rem, 2.8vw, 3rem);
     background-color: var(--color-text);
-    border: var(--border-standard);
     font-family: var(--font-display);
     font-size: 0.95rem;
     letter-spacing: 0.08em;
 }
 
-.profile-status-bar-controls {
+.status-bar-controls {
     display: flex;
     align-items: center;
     gap: 0.6rem;
 }
 
-.profile-status-bar-controls span {
+.status-bar-controls span {
     width: 0.9rem;
     height: 0.9rem;
     background-color: var(--color-background);
 }
 
 @media (max-width: 900px) {
-    .profile-status-bar {
+    .status-bar-inner {
         padding-inline: 1.5rem;
     }
 }
 
 @media (max-width: 640px) {
-    .profile-status-bar {
+    .status-bar-inner {
+        min-height: 3rem;
         padding-inline: 1rem;
-    }
-
-    .profile-status-bar-inner {
         font-size: 0.78rem;
     }
 
-    .profile-status-bar-controls span {
+    .status-bar-controls span {
         width: 0.75rem;
         height: 0.75rem;
     }

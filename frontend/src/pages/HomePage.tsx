@@ -1,6 +1,6 @@
 import HeroSection from "../components/home/HeroSection";
 import ProjectSection from "../components/home/ProjectSection";
-import ProfileStatusBar from "../components/common/StatusBar";
+import StatusBar from "../components/common/StatusBar";
 import AboutSection from "../components/home/AboutSection";
 
 function HomePage() {
@@ -8,7 +8,7 @@ function HomePage() {
         <div className="homepage">
         <HeroSection />
         <ProjectSection />
-        <ProfileStatusBar />
+        <StatusBar index={"profile.env.example"}/>
         <AboutSection />
         </div>
     );

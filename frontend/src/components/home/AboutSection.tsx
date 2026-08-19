@@ -38,7 +38,7 @@ const profileHighlights = [
 
 export default function AboutSection() {
     return (
-        <section className="home-about" aria-labelledby="home-about-title">
+        <section className="home-about">
             <div className="home-about-panel">
                 <header className="home-about-header">
                     <h2 id="home-about-title">About_Me</h2>
@@ -73,7 +73,7 @@ export default function AboutSection() {
                         </div>
                     </div>
 
-                    <div className="home-about-highlights" aria-label="Profile highlights">
+                    <div className="home-about-highlights">
                         {profileHighlights.map((item) => (
                             <Link
                                 className="home-about-highlight"
