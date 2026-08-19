@@ -2,9 +2,10 @@ import type { Tool } from "../types/tools";
 
 import { FaReact, FaFigma, FaHtml5, FaVuejs } from "react-icons/fa";
 import { DiPhotoshop } from "react-icons/di";
-import { Fa2, FaCss3Alt } from "react-icons/fa6";
+import { FaCss3Alt } from "react-icons/fa6";
 import { BsJavascript, BsTypescript } from "react-icons/bs";
 import { SiTailwindcss } from "react-icons/si";
+import { IoColorPalette } from "react-icons/io5";
 
 export const Tools: Tool[] = [
     {
@@ -20,7 +21,7 @@ export const Tools: Tool[] = [
     {
         id: "Canva",
         label: "Canva",
-        icon: Fa2
+        icon: IoColorPalette
     },
     {
         id: "HTML",

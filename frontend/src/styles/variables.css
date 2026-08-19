@@ -21,13 +21,17 @@
   /* Borders and shadows */
   --border-standard: 1px solid var(--color-text);
   --border-light: 1px solid var(--color-accent);
+  --border-thick: 3px solid var(--color-text);
+  --border-thick-light: 4px solid var(--color-accent);
+
   --shadow-small: 4px 4px 0 var(--color-text);
   --shadow-large: 7px 7px 0 var(--color-text);
 
   /* Typography */
-    --font-heading:
+  --font-heading:
     'Norwester',
     sans-serif;
+  --font-display: var(--font-heading);
 
   --font-body:
     "Manrope Variable",
