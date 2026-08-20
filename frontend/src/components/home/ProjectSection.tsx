@@ -10,9 +10,9 @@ export default function ProjectSection() {
     );
 
     return(
-      <section className='selected-projects'>
+      <section className='selected-projects' data-motion-section>
 
-        <header className='selected-projects-header'>
+        <header className='selected-projects-header' data-motion-item>
             <div className="selected-projects-heading">
                 <div className="selected-projects-line">
                 <h2>Selected_Projects</h2>

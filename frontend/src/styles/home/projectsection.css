@@ -9,7 +9,7 @@
 .selected-projects::before {
     content: "";
     position: absolute;
-    inset: 254px 0 0;
+    inset: 196px 0 0;
     z-index: -1;
     background:
         linear-gradient(rgba(125, 146, 119, 0.1) 1px, transparent 1px),
@@ -24,11 +24,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
-    min-height: 254px;
+    gap: 1.5rem;
+    min-height: 150px;
     background-color: var(--color-text);
     color: var(--color-background);
-    padding: 3.75rem;
+    padding: 2rem 3.75rem;
     overflow: hidden;
     border-bottom: var(--border-standard);
 }
@@ -46,7 +46,7 @@
 
 .selected-projects-line h2,
 .selected-projects-index {
-    font-size: 5.5rem;
+    font-size: 3.75rem;
     line-height: 1;
     letter-spacing: 0;
 }
@@ -54,7 +54,7 @@
 .selected-projects-line p {
     margin-top: 0.4rem;
     color: var(--color-background);
-    font-size: 1.875rem;
+    font-size: 1.25rem;
     line-height: 1.5;
 }
 
@@ -71,7 +71,7 @@
     display: grid;
     gap: 3rem;
     width: min(100% - 6rem, 1180px);
-    margin: 4rem auto 0;
+    margin: 2.5rem auto 0;
     padding-bottom: 5rem;
 }
 
@@ -88,21 +88,21 @@
 
 @media (max-width: 1100px) {
     .selected-projects::before {
-        inset-block-start: 210px;
+        inset-block-start: 176px;
     }
 
     .selected-projects-header {
-        min-height: 210px;
-        padding: 3rem 2rem;
+        min-height: 176px;
+        padding: 2.5rem 2rem;
     }
 
     .selected-projects-line h2,
     .selected-projects-index {
-        font-size: 3.5rem;
+        font-size: 2.75rem;
     }
 
     .selected-projects-line p {
-        font-size: 1.25rem;
+        font-size: 1.05rem;
     }
 
     .selected-projects-list {
@@ -123,7 +123,7 @@
         align-items: flex-start;
         flex-direction: column;
         min-height: 0;
-        padding: 2.5rem 1.25rem;
+        padding: 2rem 1.25rem;
     }
 
     .selected-projects-line {
@@ -132,11 +132,11 @@
 
     .selected-projects-line h2,
     .selected-projects-index {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .selected-projects-line p {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
 
     .selected-projects-list {

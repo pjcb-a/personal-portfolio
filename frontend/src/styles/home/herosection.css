@@ -12,10 +12,11 @@
 
 .main-hero {
     gap: 1.5rem;
+    margin-top: 2.5rem;
     color: var(--color-text);
-    padding: 2rem 20px 1.5rem;
+    padding: 1.25rem 20px;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .hero-icon {
@@ -44,7 +45,11 @@
     width: 100%;
     margin: 0;
     text-align: center;
-    line-height: 0.88;
+    line-height: 0.98;
+}
+
+.hero-title-primary, .hero-title-secondary {
+    display: block;
 }
 
 .hero-title-primary {
@@ -53,12 +58,13 @@
 
 .hero-title-secondary {
     color: var(--color-accent);
+    white-space: nowrap;
     -webkit-text-stroke: 0.001rem black;
 }
 
 .description {
   width: 100%;
-  margin: 2.5rem 0;
+  margin: 1.75rem 0;
   padding: 0;
   color: var(--color-text);
   font-size: 1rem;
@@ -74,18 +80,48 @@
 }
 
 .hero-btn {
-    gap: 0.65em;
+    margin: 1.5rem 0;
+    gap: 0.75em;
+}
+
+.availability {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    max-width: 400px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 0.5rem 0.75rem;
+    background-color: #DDE5D8;
+    border: var(--border-standard);
+    border-radius: 0.65rem;
+    box-shadow: 3px 3px 0 var(--color-accent);
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.availability-info {
+    color: var(--color-text);
+    display: flex;
+    align-items: center;
+    white-space: 1em;
+    font-weight: 600;
+    gap: 0.3rem;
 }
 
 .tools {
     display: flex;
     align-items: center;
     width: 100%;
-    margin-top: 2.5rem;
+    margin-top: 2.9rem;
     overflow: hidden;
     overflow: clip;
     contain: paint;
-    padding: 0.4rem;
+    padding: 1rem;
     background-color: var(--color-accent);
     border: var(--border-standard);
 }
@@ -96,7 +132,7 @@
     flex-shrink: 0;
     padding: 0.4rem 1rem;
     background-color: var(--color-accent);
-    font-family: var(--font-display);
+    font-family: var(--font-body);
     font-size: 1rem;
     font-weight: 800;
     white-space: nowrap;
@@ -146,32 +182,34 @@
 }
 
 @media (max-width: 640px) {
+    .tools {
+        margin-top: 1.5rem;
+    }
+
     .tool-label {
         padding-inline: 0.75rem;
         font-size: 0.85rem;
     }
 
     .tool-loop {
-        min-height: 0;
+        min-height: 35px;
     }
 
     .tool-track {
-        position: static;
-        flex-wrap: wrap;
-        width: 100%;
-        row-gap: 0.75rem;
-        transform: none !important;
+        position: absolute;
+        flex-wrap: nowrap;
+        width: max-content;
     }
 
     .tool-group {
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         gap: 1.2rem;
-        width: 100%;
-        padding-right: 0;
+        width: auto;
+        padding-right: 1.2rem;
     }
 
     .tool-group + .tool-group {
-        display: none;
+        display: flex;
     }
 
     .tool-group p {

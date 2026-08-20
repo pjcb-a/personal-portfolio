@@ -38,32 +38,36 @@ const profileHighlights = [
 
 export default function AboutSection() {
     return (
-        <section className="home-about">
+        <section
+            className="home-about"
+            aria-labelledby="home-about-title"
+            data-motion-section
+        >
             <div className="home-about-panel">
-                <header className="home-about-header">
+                <header className="home-about-header" data-motion-item>
                     <h2 id="home-about-title">About_Me</h2>
                     <p>03 / Profile</p>
                 </header>
 
                 <div className="home-about-content">
                     <div className="home-about-intro">
-                        <p className="home-about-name">
+                        <p className="home-about-name" data-motion-item>
                             NAME / <strong>JOHN PAUL A. JACOB</strong>
                         </p>
 
-                        <p className="home-about-copy">
+                        <p className="home-about-copy" data-motion-item>
                             A 3rd year BS - IT student at Ateneo de Naga
                             University who enjoys working between creativity
                             and technology.
                         </p>
 
-                        <p className="home-about-copy">
+                        <p className="home-about-copy" data-motion-item>
                             I create visual materials, user-focused interfaces,
                             and responsive web experiences that balance
                             creativity, clarity, and function.
                         </p>
 
-                        <div className="home-about-action">
+                        <div className="home-about-action" data-motion-item>
                             <Button
                                 label="More About Me"
                                 href="/about"
@@ -77,6 +81,7 @@ export default function AboutSection() {
                         {profileHighlights.map((item) => (
                             <Link
                                 className="home-about-highlight"
+                                data-motion-item
                                 key={item.id}
                                 to={item.href}
                             >

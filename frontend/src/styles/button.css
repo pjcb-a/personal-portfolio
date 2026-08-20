@@ -6,7 +6,7 @@
     min-height: 42px;
     padding: 0.65rem 1rem;
     border: var(--border-standard);
-    font-family: var(--font-display);
+    font-family: var(--font-body);
     font-size: 0.9rem;
     font-weight: 400;
     letter-spacing: 0.04em;
@@ -28,6 +28,7 @@
 .button--primary {
     background-color: var(--color-text);
     color: var(--color-background);
+    border-color: var(--color-accent);
 }
 
 .button--primary:hover {

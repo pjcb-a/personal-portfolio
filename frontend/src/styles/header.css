@@ -1,10 +1,14 @@
+:root {
+  --site-header-space: 8.0625rem;
+}
+
 .site-header {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
   align-items: center;
 
   width: 100%;
-  padding: 60px 30px;
+  padding: 2.25rem 1.875rem;
 
   background-color: var(--color-background);
 }
@@ -27,11 +31,15 @@
 }
 
 @media (max-width: 760px) {
+  :root {
+    --site-header-space: 18.4375rem;
+  }
+
   .site-header {
     grid-template-columns: 1fr;
     justify-items: stretch;
     gap: 0.8rem;
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
     overflow: hidden;
   }
 

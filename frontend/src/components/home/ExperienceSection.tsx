@@ -8,8 +8,12 @@ import "../../styles/home/experiencesection.css";
 
 export default function ExperienceSection() {
     return (
-        <section className="home-experience" aria-labelledby="home-experience-title">
-            <header className="home-experience-header">
+        <section
+            className="home-experience"
+            aria-labelledby="home-experience-title"
+            data-motion-section
+        >
+            <header className="home-experience-header" data-motion-item>
                 <div>
                     <p className="home-experience-eyebrow">Career trace</p>
                     <h2 id="home-experience-title">Experience_Log</h2>
@@ -23,6 +27,7 @@ export default function ExperienceSection() {
                     {experiences.map((experience, index) => (
                         <Link
                             className="home-experience-event"
+                            data-motion-item
                             key={experience.id}
                             to="/experience"
                             aria-label={`View full experience for ${experience.title}`}
@@ -57,7 +62,7 @@ export default function ExperienceSection() {
                     ))}
                 </div>
 
-                <div className="home-experience-action">
+                <div className="home-experience-action" data-motion-item>
                     <Button
                         label="View Full Experience"
                         href="/experience"

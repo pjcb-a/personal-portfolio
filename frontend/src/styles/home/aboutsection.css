@@ -25,7 +25,7 @@
 
 .home-about-header h2,
 .home-about-header p {
-    font-family: var(--font-display);
+    font-family: var(--font-body);
     font-size: 2rem;
     line-height: 1;
     text-transform: uppercase;
@@ -142,7 +142,7 @@
 }
 
 .home-about-highlight strong {
-    font-family: var(--font-display);
+    font-family: var(--font-body);
     font-size: 1.35rem;
     line-height: 1;
     text-transform: uppercase;

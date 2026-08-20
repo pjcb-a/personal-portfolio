@@ -8,7 +8,8 @@
     box-shadow: var(--shadow-small);
 }
 
-.navbar-logo, .nav-link {
+.navbar-logo,
+.nav-link {
     display: inline-flex;
     align-items: center;
     min-height: 45px;
@@ -41,23 +42,22 @@
 }
 
 .nav-link {
+    position: relative;
     margin: 5px;
     gap: 4px;
-    border: 0;
+    border: 1px solid transparent;
+    line-height: 1;
 }
 
 .nav-link:hover {
-    border: var(--border-standard);
+    border-color: var(--color-text);
     background-color: var(--color-accent);
-    transform: var(--transition-fast);
-
 }
 
 .nav-link.active,
 .resume-link {
   background-color: var(--color-accent);
-  outline: 1px solid var(--color-text);
-  outline-offset: -1px;
+  border-color: var(--color-text);
 }
 
 .nav-link:focus-visible,

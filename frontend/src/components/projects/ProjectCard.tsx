@@ -19,7 +19,11 @@ export default function ProjectCard({
     const roleLabel = project.role.join(" & ");
 
     return (
-        <article className="project-card" data-project-category={project.category}>
+        <article
+            className="project-card"
+            data-motion-item
+            data-project-category={project.category}
+        >
 
             <header className="project-card-header">
                 <p className="project-card-kicker">

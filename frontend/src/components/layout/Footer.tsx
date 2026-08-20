@@ -5,6 +5,21 @@ import { Link } from "react-router";
 import { menuItems } from "../../data/menu";
 import "../../styles/footer.css"
 
+function getScrollBehavior() {
+    const prefersReducedMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)",
+    ).matches;
+
+    return prefersReducedMotion ? "auto" : "smooth";
+}
+
+function scrollToPageTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: getScrollBehavior(),
+    });
+}
+
 export default function Footer() {
     return (
         <footer className="site-footer">
@@ -73,7 +88,14 @@ export default function Footer() {
                 </ul>
               </nav>
 
-              <button className="footer-back">Back_To_Top <ArrowUpToLine /> </button>
+              <button
+                className="footer-back"
+                type="button"
+                onClick={scrollToPageTop}
+                aria-label="Scroll to the top of this page"
+              >
+                Back_To_Top <ArrowUpToLine />
+              </button>
           </div>
 
         <div className="footer-bottom">

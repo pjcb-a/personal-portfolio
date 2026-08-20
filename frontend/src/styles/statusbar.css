@@ -14,7 +14,7 @@
     min-height: 3.65rem;
     padding: 0.65rem clamp(1rem, 2.8vw, 3rem);
     background-color: var(--color-text);
-    font-family: var(--font-display);
+    font-family: var(--font-heading);
     font-size: 1.08rem;
     letter-spacing: 0;
 }

@@ -45,3 +45,19 @@ a {
 button {
   cursor: pointer;
 }
+
+[data-motion-section],
+[data-motion-item],
+[data-hero-motion] {
+  will-change: opacity, transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-motion-section],
+  [data-motion-item],
+  [data-hero-motion] {
+    opacity: 1 !important;
+    transform: none !important;
+    will-change: auto;
+  }
+}
