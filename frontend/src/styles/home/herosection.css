@@ -111,6 +111,48 @@
     white-space: 1em;
     font-weight: 600;
     gap: 0.3rem;
+} 
+
+.availability-fill {
+    position: relative;
+    z-index: 1;
+}
+
+.availability-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    width: 19px;
+    height: 19px;
+}
+
+.availability-check {
+    width: 19px;
+    height: 19px;
+
+    overflow: visible;
+}
+
+.availability-circle,
+.availability-check-path {
+    fill: none;
+    stroke: var(--color-accent);
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.availability-check-path {
+    opacity: 0;
+}
+
+.availability-info span {
+    font-size: 11px;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
 }
 
 .tools {
