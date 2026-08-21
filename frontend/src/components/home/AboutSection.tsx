@@ -70,7 +70,7 @@ export default function AboutSection() {
                             <Button
                                 label="More About Me"
                                 href="/about"
-                                variant="outline"
+                                variant="primary"
                                 icon={<ArrowUpRight size={18} />}
                             />
                         </div>

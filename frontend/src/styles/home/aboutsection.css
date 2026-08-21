@@ -85,18 +85,6 @@
 
 .home-about-action .button {
     width: min(100%, 18rem);
-    background-color: var(--color-background);
-    color: var(--color-text);
-    font-family: var(--font-body);
-    font-weight: 800;
-    letter-spacing: 0;
-}
-
-.home-about-action .button:hover,
-.home-about-action .button:focus-visible {
-    background-color: var(--color-accent-light);
-    color: var(--color-text);
-    transform: translate(-2px, -2px);
 }
 
 .home-about-highlights {

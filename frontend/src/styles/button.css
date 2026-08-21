@@ -51,6 +51,13 @@
 .button--outline {
     background-color: var(--color-background);
     color: var(--color-text);
+    font-weight: 800;
+}
+
+.button--outline:hover {
+    background-color: var(--color-accent-light);
+    color: var(--color-text);
+    box-shadow: 2px 2px 0 var(--color-accent);
 }
 
 .button-icon {

@@ -1,8 +1,11 @@
+import  Cta from "../components/common/Cta";
 
-function ProjectsPage() {
+
+export default function ProjectsPage() {
     return(
-        <h1>Projects Page</h1>
+        <div className="projects-container">   
+            <h1>Projects Page</h1>
+            <Cta/>
+        </div>
     );
 }
-
-export default ProjectsPage

@@ -211,19 +211,6 @@
 .home-experience-action .button {
     width: 100%;
     min-height: 3.75rem;
-    background-color: var(--color-surface);
-    color: var(--color-text);
-    font-family: var(--font-body);
-    font-size: 1.05rem;
-    font-weight: 800;
-    letter-spacing: 0;
-}
-
-.home-experience-action .button:hover,
-.home-experience-action .button:focus-visible {
-    background-color: var(--color-text);
-    color: var(--color-background);
-    box-shadow: var(--shadow-small);
 }
 
 @media (max-width: 1050px) {
