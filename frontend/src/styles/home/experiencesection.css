@@ -33,7 +33,7 @@
 
 .home-experience-header h2,
 .home-experience-index {
-    font-family: var(--font-body);
+    font-family: var(--font-heading);
     font-size: 2rem;
     line-height: 1;
     text-transform: uppercase;
@@ -133,7 +133,7 @@
 
 .home-experience-period {
     color: var(--color-accent);
-    font-family: var(--font-body);
+    font-family: var(--font-heading);
     font-size: 1.45rem;
     line-height: 1;
     text-transform: uppercase;

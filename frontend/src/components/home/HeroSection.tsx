@@ -29,7 +29,7 @@ export default function HeroSection() {
             const [availability] = utils.$(".availability") as HTMLElement[];
             const [availabilityCircle] = utils.$(".availability-circle") as SVGCircleElement[];
             const [availabilityCheck] = utils.$(".availability-check-path") as SVGPathElement[];
-            
+            const [availabilityText] = utils.$(".availability-info span") as HTMLElement[];
             
             utils.set(availabilityCircle, {
                 strokeDasharray: 56.55,
@@ -64,7 +64,7 @@ export default function HeroSection() {
                 animate(heroItems, {
                     opacity: [0, 1],
                     translateY: [18, 0],
-                    delay: stagger(85),
+                    delay: stagger(140),
                     duration: 640,
                     ease: "outCubic",
                 });
@@ -128,16 +128,16 @@ export default function HeroSection() {
                     })
                 })
                 // HOVER ANIMATION //
-                const avail = splitText(availability, {
+                const avail = splitText(availabilityText, {
                 words: { wrap: 'clip' },
                 });
                 
+                // AVAILABILITY ANIMATIOn
                 const availabilityTimeline = createTimeline({
                     defaults: {
                         ease: "outCubic",
                     },
                 });
-                // AVAILABILITY ANIMATIOn
                 
                 availabilityTimeline
                 .add(availabilityCircle, {
@@ -175,12 +175,11 @@ export default function HeroSection() {
                         loop: true,
                     });
 
-                    avail.addEffect((self) => animate(self.words, {
-                    y: ['100%', '0%'],
-                    duration: 1250,
-                    ease: 'out(3)',
-                    delay: stagger(100),
-                    alternate: true,
+                avail.addEffect(({ words }) => animate(words, {
+                    y: ["100%", "0%"],
+                    duration: 750,
+                    ease: "out(3)",
+                    delay: stagger(50),
                 }));
                 });
 

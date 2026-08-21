@@ -40,7 +40,6 @@ export default function AboutSection() {
     return (
         <section
             className="home-about"
-            aria-labelledby="home-about-title"
             data-motion-section
         >
             <div className="home-about-panel">

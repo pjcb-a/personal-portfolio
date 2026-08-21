@@ -37,6 +37,7 @@
 .home-cta-file {
     min-width: 0;
     overflow-wrap: anywhere;
+    font-family: var(--font-heading);
 }
 
 .home-cta-inner {
@@ -54,7 +55,7 @@
 
 .home-cta-header h2,
 .home-cta-header p {
-    font-family: var(--font-body);
+    font-family: var(--font-heading);
     font-size: 2rem;
     line-height: 1;
     text-transform: uppercase;
