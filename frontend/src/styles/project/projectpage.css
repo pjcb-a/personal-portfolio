@@ -1,0 +1,5 @@
+.project-container {
+    background-color: var(--color-background);
+    border: var(--border-standard);
+    margin: 0.6rem;
+}

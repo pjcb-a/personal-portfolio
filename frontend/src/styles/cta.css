@@ -1,0 +1,32 @@
+.cta-container {
+    position: relative;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+.cta-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    min-height: 100px;
+    background-color: var(--color-accent);
+    color: var(--color-background);
+    padding: 2rem 2.75rem;
+    border: var(--border-thick);
+}
+
+.cta-content-text {
+    gap: 1.5rem;
+}
+
+.cta-content-iconify {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cta-content-line {
+    border: var(--border-light-white);
+}

@@ -12,9 +12,8 @@
 
 .main-hero {
     gap: 1.5rem;
-    margin-top: 2.5rem;
     color: var(--color-text);
-    padding: 1.25rem 20px;
+    padding: 3.75rem 20px 1.25rem 20px;
     font-size: 1rem;
     font-weight: 600;
 }
