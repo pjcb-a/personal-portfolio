@@ -55,7 +55,7 @@ export default function Footer() {
               <nav
                 className="footer-links"
               >
-                <h2 className="footer-heading"><Link to="/https://www.linkedin.com/in/john-paul-jacob-12b064407/">Quick Links</Link></h2>
+                <h2 className="footer-heading">Quick Links</h2>
 
                 <ul className="footer-link-list">
                   <li>

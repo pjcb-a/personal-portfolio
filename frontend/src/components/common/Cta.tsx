@@ -9,7 +9,9 @@ export default function Cta() {
         <div className="cta-container">
             <div className="cta-content">
                 <div className="cta-content-iconify">
+                    <div className="cta-icon">
                     <Mail/>
+                    </div>
                     <div className="cta-content-text">
                     <span>Have a Project or Internship Opportunity?</span>
                     <div className="cta-content-line"></div>

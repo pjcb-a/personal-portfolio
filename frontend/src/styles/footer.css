@@ -115,11 +115,6 @@
   text-transform: uppercase;
 }
 
-.footer-heading:hover {
-  transform: var(--transition-standard);
-  color: var(--color-accent);
-}
-
 .footer-link-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(90px, 1fr));

@@ -25,7 +25,7 @@
   --border-thick-light: 4px solid var(--color-accent);
   --border-light-white: 2px solid var(--color-background);
   
-  --shadow-small: 4px 4px 0 var(--color-text);
+  --shadow-small: 2px 2px 0 var(--color-text);
   --shadow-large: 7px 7px 0 var(--color-text);
 
   /* Typography */
