@@ -301,8 +301,7 @@
 
 .project-card-tool:hover,
 .project-card-tool:focus-visible {
-  background-color: var(--project-accent-soft);
-  border-color: var(--project-accent);
+  color: var(--project-accent);
   transform: translateY(-2px);
 }
 
