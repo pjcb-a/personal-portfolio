@@ -13,7 +13,7 @@
 .main-hero {
     gap: 1.5rem;
     color: var(--color-text);
-    padding: 3.75rem 20px 0.2rem 20px;
+    padding: 5.75rem 20px 0.2rem 20px;
     font-size: 1rem;
     font-weight: 600;
 }
@@ -63,7 +63,7 @@
 
 .description {
   width: 100%;
-  margin: 1.75rem 0;
+  margin: 1.5rem 0 3rem 0;
   padding: 0;
   color: var(--color-text);
   font-size: 1rem;
@@ -90,7 +90,7 @@
     width: fit-content;
     max-width: 400px;
     height: 40px;
-    margin: 1.5rem auto;
+    margin: 1.5rem auto 2.3rem auto;
     padding: 0.5rem 0.75rem;
     background-color: #DDE5D8;
     border: var(--border-standard);

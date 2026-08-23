@@ -1,5 +1,12 @@
 .project-container {
+    display: flex;
+    flex-direction: column;
     background-color: var(--color-background);
-    border: var(--border-standard);
-    margin: 0.6rem;
+}
+
+
+.project-page-line {
+    border-bottom: var(--border-thick); 
+    margin: 1rem 2rem;  
+
 }

@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     gap: 0.6rem;
-    margin: 2rem;
+    margin: 0.6rem 2rem 2rem 2rem;
 }
 
 .category-container button{
@@ -20,6 +20,12 @@
 }
 
 .category-container button:hover {
+  background-color: var(--color-accent);
+  transform: var(--transition-fast);
+  box-shadow: 1px 1px 0 var(--color-text);
+}
+
+.category-container button:active {
   background-color: var(--color-accent);
   transform: var(--transition-fast);
   box-shadow: 1px 1px 0 var(--color-text);

@@ -9,6 +9,7 @@ interface PageTitleProps {
 export default function PageTitle({pageIndex}: PageTitleProps) {
 
     const currentSection = SectionInfos[pageIndex];
+    
     return(
         <div className="title-container">
                     <div className="title-page-number">
