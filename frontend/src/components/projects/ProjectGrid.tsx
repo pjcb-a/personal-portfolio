@@ -1,6 +1,8 @@
+import { ArrowUpRight } from "lucide-react";
 import { projects } from "../../data/projects"
 
 import "../../styles/project/projectgrid.css"
+import Button from "../common/Button";
 
 interface ProjectGridProps {
     gridLabel: string
@@ -31,10 +33,22 @@ export default function ProjectGrid({gridLabel, index}: ProjectGridProps) {
         <div className="project-grid-container">
             <div className="project-grid-header">
                 <div className="project-grid-header-subtitle">
-                    <span>{currentIndex.id}</span>
+                    <span>{currentIndex.id} /</span>
+
+                    {currentIndex.category}
                 </div>
 
-                <div className="project-header-line"></div>
+                <div className="project-grid-header-line"></div>
+
+                <div className="project-grid-header-description">
+                    {currentIndex.description}
+                </div>
+
+                <Button 
+                    label="VIEW_ALL"
+                    href="/"
+                    variant="outline"
+                    icon={<ArrowUpRight size={16}/>}/>
             </div>
 
             <div className="project-grid">

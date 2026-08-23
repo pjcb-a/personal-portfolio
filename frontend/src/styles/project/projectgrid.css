@@ -2,3 +2,10 @@
     display: flex;
     align-items: center;
 }
+
+.project-grid-header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin: 0.6rem 2rem 2rem 2rem;
+}

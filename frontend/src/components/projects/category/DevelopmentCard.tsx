@@ -2,6 +2,8 @@ import { ArrowUpRight } from "lucide-react";
 
 import type { DevelopmentProject } from "../../../types/project";
 
+import "../../../styles/projectcategory.css"
+
 interface DevelopmentCardProps {
     project: DevelopmentProject;
 }
