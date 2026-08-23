@@ -71,18 +71,13 @@
 .footer-social-link {
   display: grid;
   place-items: center;
-
   width: 44px;
   height: 44px;
-
   border: var(--border-light  );
   background-color: var(--color-background);
   color: var(--color-text);
-
   font-size: 1.35rem;
-
-  box-shadow: 3px 3px 0 var(--color-accent);
-
+  box-shadow: var(--shadow-medium-accent);
   transition:
     background-color var(--transition-fast),
     transform var(--transition-fast),
@@ -141,25 +136,25 @@
 .footer-back {
   grid-area: back;
   justify-self: end;
-
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
-
   min-width: 150px;
   padding: 0.75rem 1rem;
-
   border: var(--border-standard);
   background-color: var(--color-accent);
   color: var(--color-text);
-
   box-shadow: 4px 4px 0 var(--color-text);
-
   font-family: var(--font-heading);
   font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.12em;
+
+    transition:
+    background-color var(--transition-fast),
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
 }
 
 .footer-back:hover {
