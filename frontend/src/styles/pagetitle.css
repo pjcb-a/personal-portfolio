@@ -1,0 +1,33 @@
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 2.5rem;
+}
+
+.title-page-number {
+    gap: 0.5rem;
+    font-family: var(--font-heading);
+    color: var(--color-text);
+    display: flex;
+    align-items: center;
+}
+
+.title-page-number span {
+    color: var(--color-accent);
+}
+
+.title-page-number-secondary {
+    color: var(--color-text);
+}
+
+.title-page {
+    margin-top: 0.4rem;
+}
+
+.title-page-description {
+    line-height: 1.7;
+    margin: 1.5rem 0 2rem 0;
+    max-width: 500px;
+    letter-spacing: 0.1em;
+}

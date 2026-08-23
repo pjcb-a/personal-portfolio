@@ -1,7 +1,7 @@
 import { Link } from "react-router"
 import type { ButtonProps } from "../../types/button"
 
-import "../../styles/button.css"
+import "../../styles/common/button.css"
 
 export default function Button({
     label,

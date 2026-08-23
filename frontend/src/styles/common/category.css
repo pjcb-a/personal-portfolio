@@ -1,0 +1,11 @@
+.category-container {
+    display: flex;
+    align-items: stretch;
+    max-width: 100%;
+    min-width: 0;
+}
+
+.category ul{
+    display: flex;
+    align-items: center;
+}

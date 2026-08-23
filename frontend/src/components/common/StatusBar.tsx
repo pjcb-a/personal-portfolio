@@ -1,4 +1,4 @@
-import "../../styles/statusbar.css";
+import "../../styles/common/statusbar.css";
 
 interface StatusProps {
     index: string  

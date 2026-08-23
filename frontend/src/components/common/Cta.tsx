@@ -2,7 +2,7 @@ import Button from "./Button";
 
 import { ArrowUpRight, Mail } from "lucide-react";
 
-import "../../styles/cta.css"
+import "../../styles/common/cta.css"
 
 export default function Cta() {
     return (

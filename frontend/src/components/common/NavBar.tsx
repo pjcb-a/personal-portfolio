@@ -1,10 +1,10 @@
 import { Link, NavLink } from "react-router";
 import { menuItems } from "../../data/menu";
 
-import "../../styles/navbar.css"
+import "../../styles/common/navbar.css"
 import { ArrowUpRight } from "lucide-react";
 
-function NavBar() {
+export default function NavBar() {
     return(
         <nav className="navigation">
             <div className="navbar-logo">
@@ -44,5 +44,3 @@ function NavBar() {
         </nav>
     );
 }
-
-export default NavBar
