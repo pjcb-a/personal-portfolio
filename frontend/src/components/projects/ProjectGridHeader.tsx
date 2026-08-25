@@ -17,28 +17,27 @@ export default function ProjectGridHeader({count, title, description, category}:
     project => project.category === category
     ).length;
     
-    return(
-        <div className="project-grid-container">
-           
+    return(           
             <div className="project-grid-header">
                 <div className="project-grid-header-subtitle">
-                    <span>0{count} /</span>
+                    <p>
+                        <span>0{count} / </span>
 
-                    {title}
+                        {title}
+                    </p>
                 </div>
-
-                <div className="project-grid-header-line"></div>
 
                 <div className="project-grid-header-description">
                     {description}
                 </div>
 
-                <Button 
-                    label={`VIEW_ALL (${categoryCount})`}
-                    href="/"
-                    variant="outline"
-                    icon={<ArrowUpRight size={16}/>}/>
+                <div className="project-grid-header-button">
+                    <Button 
+                        label={`VIEW_ALL (${categoryCount})`}
+                        href="/"
+                        variant="outline"
+                        icon={<ArrowUpRight size={16}/>}/>
+                </div>
             </div>
-        </div>
     );
 }

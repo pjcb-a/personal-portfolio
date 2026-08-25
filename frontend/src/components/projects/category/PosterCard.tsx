@@ -1,11 +1,11 @@
 import { ArrowUpRight } from "lucide-react";
 
-import type { PosterProject } from "../../../types/project";
+import type { Project } from "../../../types/project";
 
 import "../../../styles/projectcategory.css"
 
 interface PosterCardProps {
-    project: PosterProject;
+    project: Project;
 }
 
 export default function PosterCard({

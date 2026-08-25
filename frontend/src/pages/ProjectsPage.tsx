@@ -11,7 +11,7 @@ export default function ProjectsPage() {
             <PageTitle pageIndex={0}/>
             <Category/>
             <div className="project-page-line"></div>
-            <ProjectGrid gridLabel="development" index={0}/>
+            <ProjectGrid/>
             <Cta/>
         </div>
     );

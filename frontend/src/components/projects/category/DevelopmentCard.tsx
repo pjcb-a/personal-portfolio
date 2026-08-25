@@ -1,11 +1,11 @@
 import { ArrowUpRight } from "lucide-react";
 
-import type { DevelopmentProject } from "../../../types/project";
+import type { Project } from "../../../types/project";
 
 import "../../../styles/projectcategory.css"
 
 interface DevelopmentCardProps {
-    project: DevelopmentProject;
+    project: Project;
 }
 
 export default function DevelopmentCard({ 
@@ -17,12 +17,6 @@ export default function DevelopmentCard({
                         src={project.image}
                         alt={project.title}
                     />
-
-                    {project.status && (
-                        <span className="project-grid-card-badge">
-                            {project.status.replace("-", " ")}
-                        </span>
-                    )}
                 </div>
 
                 <div className="project-grid-card-header">
