@@ -31,14 +31,17 @@ export default function ProjectGrid() {
             <div className="project-grid-cards">
             <ProjectGridHeader count={1} title="Development" description={developmentDescription} category="development"/>
             
-             {developmentProjects.map((project) => (
-                <DevelopmentCard key={project.title} project={project}/>
-            ))}
+                {developmentProjects.map((project) => (
+                    <DevelopmentCard key={project.title} project={project}/>
+                ))}
 
             </div>
 
             <div className="project-grid-cards">
             <ProjectGridHeader count={2} title="Creative Media" description={creativeDescription} category="creative-media"/>
+                {creativeProjects.map((project) => (
+                    <CreativeMediaCard key={project.title} project={project}/>
+                ))}
             </div>
 
             <div className="project-grid-cards">
