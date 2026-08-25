@@ -1,5 +1,5 @@
 .project-grid-container {
-    display: flex;
+    display: grid;
     align-items: center;
 }
 

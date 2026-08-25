@@ -86,4 +86,31 @@ export const projects: Project[] = [
 
     featured: true,
   },
+
+  {
+    id: 4,
+    slug: "memorandum",
+
+    title: "Memorandum",
+    category: "poster",
+    categoryLabel: "POSTERS",
+
+    year: 2026,
+    subtitle: "Organization Social Media Post",
+
+    description:
+      "A poster for information.",
+
+    role: [
+      "Graphic Designer",
+    ],
+
+    tools: [
+      "Photoshop",
+    ],
+
+    image: "/projects/memorandum/cover.png",
+
+    featured: false,
+  },
 ];

@@ -3,6 +3,7 @@ import { projects } from "../../data/projects"
 
 import "../../styles/project/projectgrid.css"
 import Button from "../common/Button";
+import ProjectGridHeader from "./ProjectGridHeader";
 
 interface ProjectGridProps {
     gridLabel: string
@@ -29,32 +30,16 @@ export default function ProjectGrid({gridLabel, index}: ProjectGridProps) {
     (project) => project.category === "poster"
     );
 
+    const developmentDescription = "Interfaces, systems, and digital products built with code and designed with purpose. ";
+    const creativeDescription = "Campaigns, publications, and digital materials for organizations and events.";
+    const posterDescription = "Personal poster designs and visual experiments in typography and layout."; 
     return(
         <div className="project-grid-container">
-            <div className="project-grid-header">
-                <div className="project-grid-header-subtitle">
-                    <span>{currentIndex.id} /</span>
+            <ProjectGridHeader count={1} title="Development" description={developmentDescription} category="development"/>
 
-                    {currentIndex.category}
-                </div>
+            <ProjectGridHeader count={2} title="Creative Media" description={creativeDescription} category="creative-media"/>
 
-                <div className="project-grid-header-line"></div>
-
-                <div className="project-grid-header-description">
-                    {currentIndex.description}
-                </div>
-
-                <Button 
-                    label="VIEW_ALL"
-                    href="/"
-                    variant="outline"
-                    icon={<ArrowUpRight size={16}/>}/>
-            </div>
-
-            <div className="project-grid">
-
-            </div>
-
+            <ProjectGridHeader count={3} title="Posters" description={posterDescription} category="poster"/>
         </div>
     );
 }
