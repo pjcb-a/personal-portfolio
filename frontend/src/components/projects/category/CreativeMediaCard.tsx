@@ -2,7 +2,7 @@ import { ArrowUpRight } from "lucide-react";
 
 import type { Project } from "../../../types/project";
 
-import "../../../styles/projectcategory.css"
+import "../../../styles/project/project.css"
 interface CreativeMediaCardProps {
     project: Project;
 }

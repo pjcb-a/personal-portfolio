@@ -1,7 +1,9 @@
 import type { Project } from "../../types/project"
 import { ArrowUpRight } from "lucide-react";
 import { Tools } from "../../data/tools";
-import '../../styles/project/projectcard.css'
+
+import '../../styles/project/project.css'
+
 import Button from "../common/Button";
 
 interface ProjectCardProps {

@@ -3,7 +3,7 @@ import  Cta from "../components/common/Cta";
 import PageTitle from "../components/layout/PageTitle";
 import ProjectGrid from "../components/projects/ProjectGrid";
 
-import "../styles/project/projectpage.css";
+import "../styles/project/project.css";
 
 export default function ProjectsPage() {
     return(

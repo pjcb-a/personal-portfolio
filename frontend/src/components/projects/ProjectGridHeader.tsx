@@ -1,7 +1,7 @@
 import Button from "../common/Button"
 import { ArrowUpRight } from "lucide-react"
 
-import "../../styles/project/projectgrid.css"
+import "../../styles/project/project.css"
 import { projects } from "../../data/projects";
 
 interface ProjectGridHeaderProps {

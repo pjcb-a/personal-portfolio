@@ -1,3 +1,72 @@
+/* Project Page CSS */
+.project-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-background);
+    margin: 1.5rem;
+    border: var(--border-thick);
+}
+
+.project-page-line {
+    border-bottom: var(--border-thick); 
+    margin: 1rem 2rem;  
+}
+
+
+
+/* Project Grid CSS */
+.project-grid-container {
+    display: grid;
+    align-items: center;
+    grid-template-rows: repeat(3, 1fr);
+    margin: 0 1.5rem;
+}
+
+.project-grid-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+
+
+/* ProjectGridHeader */
+.project-grid-header {
+    display: grid;
+    grid-template-columns: 1fr 1.9fr 1fr;
+    align-items: center;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    gap: 2rem;
+}
+
+.project-grid-header-subtitle {
+    width: 80%;
+    padding-bottom: 1rem;
+    border-bottom: var(--border-thick);
+}
+
+.project-grid-header-subtitle p {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+}
+
+.project-grid-header-subtitle span {
+    color: var(--color-accent);
+}
+
+.project-grid-header-description {
+    justify-self: center;
+    width: 100%;
+}
+
+.project-grid-header-button {
+    justify-self: end;
+}
+
+
+
+/* Project Card */
 .project-card {
   --project-accent: var(--color-accent);
   --project-accent-soft: var(--color-accent-light);
@@ -484,4 +553,98 @@
   .project-card:focus-within .project-card-preview-title {
     transform: none;
   }
+}
+
+
+
+/* Project Grid Card */
+.project-grid-card {
+    display: flex;
+    flex-direction: column; 
+    background-color: var(--color-background);
+    border: var(--border-medium);
+    padding: 1.5rem;
+    overflow: hidden;
+}
+
+.project-grid-card-image {
+    position: relative;
+    height: 108px;
+    margin-bottom: 1rem;
+    border: var(--border-standard);
+    background-color: var(--color-muted);
+}
+
+.project-grid-card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.project-grid-card-header h3 {
+    font-size: 1.5rem;
+     line-height: 1;
+    letter-spacing: 0.04em;
+}
+
+.project-grid-card-header span {
+    font-size: 1rem;
+    color: var(--color-accent);
+    font-family: var(--font-heading);
+}
+
+.project-grid-card-header a {
+    border: var(--border-standard);
+    padding: 0.3rem;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.project-grid-card-header a:hover {
+    color: var(--color-text);
+    background-color: var(--color-accent);
+    transform: var(--transition-fast);
+}
+
+.project-grid-card-description {
+    max-width: 300px;
+    line-height: 1.45;
+    letter-spacing: 0.01em;
+}
+
+.project-grid-card-role {
+    margin-top: auto;
+    padding-top: 1.2rem;
+}
+
+.project-grid-card-role span {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: var(--color-accent);
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+.project-grid-card-role p {
+        margin: 0;
+        font-family: var(--font-heading);
+}
+
+.project-grid-card-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+
+}
+
+.project-grid-card-tools li {
+    border: var(--border-light);
+    padding: 0.2rem 0.5rem;
+    background-color: var(--color-accent-light);
 }

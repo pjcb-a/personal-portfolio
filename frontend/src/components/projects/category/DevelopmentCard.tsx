@@ -2,7 +2,7 @@ import { ArrowUpRight } from "lucide-react";
 
 import type { Project } from "../../../types/project";
 
-import "../../../styles/projectcategory.css"
+import "../../../styles/project/project.css"
 
 interface DevelopmentCardProps {
     project: Project;
@@ -12,6 +12,7 @@ export default function DevelopmentCard({
     project, }: DevelopmentCardProps) {
         return (
             <article className="project-grid-card project-grid-card--development">
+                
                 <div className="project-grid-card-image">
                     <img
                         src={project.image}
@@ -28,10 +29,10 @@ export default function DevelopmentCard({
                         </span>
                     </div>
 
-                    <a 
+                    <   a 
                         href={`/projects/${project.slug}`}
                         >
-                            <ArrowUpRight size={16} />
+                            <ArrowUpRight size={20} />
                         </a>
                 </div>
 
@@ -43,7 +44,7 @@ export default function DevelopmentCard({
                     <span>ROLE</span>
 
                     <p>
-                        {project.role.join("/")}
+                        {project.role.join(" / ")}
                     </p>
                 </div>
 
