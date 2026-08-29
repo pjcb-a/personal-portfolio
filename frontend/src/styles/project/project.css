@@ -16,9 +16,8 @@
 
 /* Project Grid CSS */
 .project-grid-container {
-    display: grid;
-    align-items: center;
-    grid-template-rows: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column;
     margin: 0 1.5rem;
 }
 
@@ -38,6 +37,7 @@
     width: 100%;
     padding: 1.5rem 2rem;
     gap: 2rem;
+    margin: 0.5rem 0;
 }
 
 .project-grid-header-subtitle {
@@ -83,6 +83,10 @@
     transform var(--transition-standard),
     box-shadow var(--transition-standard),
     border-color var(--transition-standard);
+}
+
+.project-category {
+  margin-bottom: 1.5rem;
 }
 
 .project-card[data-project-category="creative-media"] {
@@ -563,8 +567,9 @@
     flex-direction: column; 
     background-color: var(--color-background);
     border: var(--border-medium);
-    padding: 1.5rem;
+    padding: 1rem;
     overflow: hidden;
+    margin: 1.5rem;
 }
 
 .project-grid-card-image {
@@ -644,7 +649,15 @@
 }
 
 .project-grid-card-tools li {
+    font-size: 0.8rem;
     border: var(--border-light);
     padding: 0.2rem 0.5rem;
     background-color: var(--color-accent-light);
+    margin-bottom: 0.6rem;
+}
+
+.project-grid-card--poster {
+  min-height: 300px;
+  gap: 5rem;
+  padding-bottom: 0;
 }

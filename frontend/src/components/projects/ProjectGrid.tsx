@@ -28,28 +28,38 @@ export default function ProjectGrid() {
     const posterDescription = "Personal poster designs and visual experiments in typography and layout."; 
     return(
         <div className="project-grid-container">
-            <ProjectGridHeader count={1} title="Development" description={developmentDescription} category="development"/>
-            <div className="project-grid-cards">
             
-                {developmentProjects.map((project) => (
-                    <DevelopmentCard key={project.title} project={project}/>
-                ))}
+            <section className="project-category">
+                <ProjectGridHeader count={1} title="Development" description={developmentDescription} category="development"/>
+                
+                <div className="project-grid-cards">
+                    {developmentProjects.map((project) => (
+                        <DevelopmentCard key={project.title} project={project}/>
+                    ))}
+                </div>
+            </section>
 
-            </div>
 
+        <section className="project-category">
             <ProjectGridHeader count={2} title="Creative Media" description={creativeDescription} category="creative-media"/>
+           
             <div className="project-grid-cards">
                 {creativeProjects.map((project) => (
                     <CreativeMediaCard key={project.title} project={project}/>
                 ))}
             </div>
+        </section>
 
+
+        <section className="project-category">
             <ProjectGridHeader count={3} title="Posters" description={posterDescription} category="poster"/>
+            
             <div className="project-grid-cards">
                 {posterProjects.map((project) => (
                     <PosterCard key={project.title} project={project}/>
                 ))}
             </div>
+        </section>
         </div>
     );
 }
