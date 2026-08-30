@@ -11,7 +11,7 @@ interface DevelopmentCardProps {
 export default function DevelopmentCard({ 
     project, }: DevelopmentCardProps) {
         return (
-            <article className="project-grid-card project-grid-card--development">
+            <article className="project-grid-card">
                 
                 <div className="project-grid-card-image">
                     <img
@@ -20,6 +20,7 @@ export default function DevelopmentCard({
                     />
                 </div>
 
+            <div className="project-grid-card-content">
                 <div className="project-grid-card-header">
                     <div>
                         <h3>{project.title}</h3>
@@ -55,6 +56,7 @@ export default function DevelopmentCard({
                         </li>
                     ))}
                 </ul>
+            </div>
             </article>
         );
 }

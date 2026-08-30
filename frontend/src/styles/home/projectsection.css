@@ -2,7 +2,7 @@
     position: relative;
     isolation: isolate;
     overflow: hidden;
-    background-color: var(--color-background);
+    background-color: var(--color-background-dark);
     color: var(--color-text);
 }
 
@@ -26,11 +26,10 @@
     justify-content: space-between;
     gap: 1.5rem;
     min-height: 150px;
-    background-color: var(--color-text);
+    background-color: var(--color-background-dark);
     color: var(--color-background);
-    padding: 2rem 3.75rem;
+    padding: 1.7rem 3.75rem;
     overflow: hidden;
-    border-bottom: var(--border-standard);
 }
 
 .selected-projects-heading {
@@ -67,85 +66,11 @@
 }
 
 .selected-projects-list {
-    position: relative;
     display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 3rem;
-    width: min(100% - 6rem, 1180px);
-    margin: 2.5rem auto 0;
+    margin: 2.5rem;
     padding-bottom: 5rem;
+    align-items: stretch;
 }
 
-.selected-projects-list::before {
-    content: "";
-    position: absolute;
-    top: 0.5rem;
-    bottom: 5rem;
-    left: -1.5rem;
-    width: 1px;
-    background-color: var(--color-text);
-    opacity: 0.28;
-}
-
-@media (max-width: 1100px) {
-    .selected-projects::before {
-        inset-block-start: 176px;
-    }
-
-    .selected-projects-header {
-        min-height: 176px;
-        padding: 2.5rem 2rem;
-    }
-
-    .selected-projects-line h2,
-    .selected-projects-index {
-        font-size: 2.75rem;
-    }
-
-    .selected-projects-line p {
-        font-size: 1.05rem;
-    }
-
-    .selected-projects-list {
-        width: min(100% - 3rem, 900px);
-        gap: 2.5rem;
-        margin-top: 3rem;
-        padding-bottom: 5rem;
-    }
-}
-
-@media (max-width: 700px) {
-    .selected-projects::before {
-        inset-block-start: 0;
-        background-size: 34px 34px;
-    }
-
-    .selected-projects-header {
-        align-items: flex-start;
-        flex-direction: column;
-        min-height: 0;
-        padding: 2rem 1.25rem;
-    }
-
-    .selected-projects-line {
-        padding-left: 1rem;
-    }
-
-    .selected-projects-line h2,
-    .selected-projects-index {
-        font-size: 2rem;
-    }
-
-    .selected-projects-line p {
-        font-size: 0.95rem;
-    }
-
-    .selected-projects-list {
-        width: min(100% - 2rem, 560px);
-        gap: 2rem;
-        margin-top: 2rem;
-    }
-
-    .selected-projects-list::before {
-        display: none;
-    }
-}

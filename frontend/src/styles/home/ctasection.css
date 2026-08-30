@@ -1,24 +1,9 @@
 .home-cta {
     width: 100%;
-    background-color: var(--color-text);
+    background-color: var(--color-background-dark);
     color: var(--color-background);
 }
 
-.home-cta-windowbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1.5rem;
-    min-height: 3.35rem;
-    padding: 0.55rem clamp(1rem, 2.8vw, 3rem);
-    background-color: var(--color-accent-light);
-    border-top: var(--border-standard);
-    border-bottom: var(--border-standard);
-    color: var(--color-text);
-    font-family: var(--font-body);
-    font-size: 1rem;
-    line-height: 1;
-}
 
 .home-cta-window-controls {
     display: flex;
@@ -284,16 +269,6 @@
 }
 
 @media (max-width: 760px) {
-    .home-cta-windowbar {
-        min-height: 3rem;
-        font-size: 0.85rem;
-    }
-
-    .home-cta-window-controls span {
-        width: 0.9rem;
-        height: 0.9rem;
-    }
-
     .home-cta-inner {
         padding-block: 2.5rem 3.5rem;
     }
@@ -330,10 +305,6 @@
 }
 
 @media (max-width: 520px) {
-    .home-cta-windowbar {
-        gap: 1rem;
-    }
-
     .home-cta-lead {
         font-size: 1.85rem;
     }

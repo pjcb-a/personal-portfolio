@@ -7,7 +7,6 @@
     color: var(--color-text);
 }
 
-.home-experience-header,
 .home-experience-board {
     border: var(--border-standard);
     box-shadow: var(--shadow-large);
@@ -18,17 +17,8 @@
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
-    padding: 1.5rem 1.75rem;
-    background-color: var(--color-surface);
-}
-
-.home-experience-eyebrow {
-    margin-bottom: 0.35rem;
-    color: var(--color-accent);
-    font-family: var(--font-body);
-    font-size: 0.85rem;
-    letter-spacing: 0;
-    text-transform: uppercase;
+    padding: 1.5rem 0.3rem;
+    margin-bottom: 1rem;
 }
 
 .home-experience-header h2,
@@ -60,6 +50,10 @@
     margin-top: 1.75rem;
     padding: clamp(1.25rem, 2.2vw, 2.25rem);
     background-color: var(--color-background);
+}
+
+.home-experience-title {
+    color: var(--color-accent);
 }
 
 .home-experience-timeline {

@@ -1,12 +1,15 @@
 import PageTitle from "../components/layout/PageTitle";
 
-function AboutPage() {
+import "../styles/about/about.css"
+
+export default function AboutPage() {
     return(
-        <>
+        <div className="about-container">
         <PageTitle pageIndex={1}/>
-        <h1>About Page</h1>
-        </>
+
+        <div className="about-image">
+            <img src=""></img>
+        </div>
+        </div>
     );
 }
-
-export default AboutPage

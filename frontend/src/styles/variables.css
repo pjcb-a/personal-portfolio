@@ -14,6 +14,7 @@
   --color-background: #faf9f5;
   --color-surface: #ffffff;
   --color-text: #000000;
+  --color-background-dark: #15140f;
   --color-muted: #686862;
   --color-accent: #7d9277;
   --color-accent-light: #dce4d8;
@@ -31,6 +32,7 @@
   --shadow-medium: 3px 3px 0 var(--color-text);
   --shadow-medium-accent: 3px 3px 0 var(--color-accent);
   --shadow-large: 7px 7px 0 var(--color-text);
+  --shadow-large-accent: 7px 7px 0 var(--color-accent);
 
   /* Typography */
   --font-heading:

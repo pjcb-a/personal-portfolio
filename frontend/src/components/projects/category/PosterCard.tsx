@@ -12,7 +12,7 @@ export default function PosterCard({
     project,
 }: PosterCardProps) {
     return (
-        <article className="project-grid-card project-grid-card--poster">
+        <article className="project-grid-card">
 
             <div className="project-grid-card-image">
                 <img
@@ -21,6 +21,7 @@ export default function PosterCard({
                 />
             </div>
 
+        <div className="project-grid-card-content">
             <div className="project-grid-card-header">
                 <div>
                     <h3>{project.title}</h3>
@@ -37,7 +38,7 @@ export default function PosterCard({
                     <ArrowUpRight size={16} />
                 </a>
             </div>
-
+        </div>
         </article>
     );
 }

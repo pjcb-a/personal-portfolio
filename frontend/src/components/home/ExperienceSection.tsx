@@ -10,19 +10,15 @@ export default function ExperienceSection() {
     return (
         <section
             className="home-experience"
-            aria-labelledby="home-experience-title"
             data-motion-section
         >
-            <header className="home-experience-header" data-motion-item>
-                <div>
-                    <p className="home-experience-eyebrow">Career trace</p>
+            <div className="home-experience-board" data-motion-item>
+            <div className="home-experience-header">
                     <h2 id="home-experience-title">Experience_Log</h2>
-                </div>
 
                 <p className="home-experience-index">04 / Journey</p>
-            </header>
+            </div>
 
-            <div className="home-experience-board">
                 <div className="home-experience-timeline">
                     {experiences.map((experience, index) => (
                         <Link

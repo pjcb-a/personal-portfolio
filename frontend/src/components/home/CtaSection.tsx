@@ -32,16 +32,6 @@ export default function CtaSection() {
             aria-labelledby="home-cta-title"
             data-motion-section
         >
-            <div className="home-cta-windowbar" aria-hidden="true" data-motion-item>
-                <div className="home-cta-window-controls">
-                    <span />
-                    <span />
-                    <span />
-                </div>
-
-                <span className="home-cta-file">readme.txt</span>
-            </div>
-
             <div className="home-cta-inner">
                 <header className="home-cta-header" data-motion-item>
                     <h2 id="home-cta-title">Contact_Me</h2>

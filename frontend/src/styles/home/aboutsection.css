@@ -1,16 +1,7 @@
 .home-about {
     position: relative;
-    padding: 1.875rem clamp(1rem, 2.8vw, 3rem) 6rem;
     background-color: var(--color-background);
     color: var(--color-text);
-}
-
-.home-about-panel {
-    width: min(100%, 1635px);
-    margin-inline: auto;
-    background-color: var(--color-surface);
-    border: var(--border-standard);
-    box-shadow: var(--shadow-large);
 }
 
 .home-about-header {

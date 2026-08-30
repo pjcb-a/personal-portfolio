@@ -1,0 +1,7 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-background);
+    margin: 1.5rem;
+    border: var(--border-thick);
+}
