@@ -11,7 +11,7 @@ export const SectionInfos: SectionInfo[] = [
     {
       id: 2,
       nav: "About Me",
-      title: "Hello, I'm John Paul.",
+      title: "Hello, I'm JP.",
       description: "I’m a BS Information Technology student who enjoys building clean interfaces, solving problems, and creating meaningful visuals that communicate ideas.",  
     },
     {

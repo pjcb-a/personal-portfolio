@@ -25,6 +25,10 @@
     margin-top: 0.4rem;
 }
 
+.title-page h2 {
+    font-size: 2rem;
+}
+
 .title-page-description {
     line-height: 1.7;
     margin: 1.5rem 0 2rem 0;

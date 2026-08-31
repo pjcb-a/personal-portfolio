@@ -29,7 +29,7 @@ export const menuItems: MenuItem[] = [
         id: "resume",
         kind: "external",
         label: "Resume",
-        href: "/",
+        href: "src/assets/files/John_Paul_Jacob_Resume.pdf",
         openInNewTab: true,
         download: true,
     },
