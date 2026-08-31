@@ -1,9 +1,11 @@
 import '../../styles/home/projectsection.css'
 
+import { ArrowUpRight } from 'lucide-react';
 import { projects } from '../../data/projects';
 import DevelopmentCard from '../projects/category/DevelopmentCard';
 import CreativeMediaCard from '../projects/category/CreativeMediaCard';
 import PosterCard from '../projects/category/PosterCard';
+import Button from '../common/Button';
 
 export default function ProjectSection() {
 
@@ -26,6 +28,14 @@ export default function ProjectSection() {
                 <DevelopmentCard project={projects[0]}/>
                 <CreativeMediaCard project={projects[1]}/>
                 <PosterCard project={projects[2]}/>
+
+          <div className="selected-projects-btn">
+            <Button 
+              label='View All Projects'
+              href='/projects'
+              variant='outline'
+              icon={ <ArrowUpRight size={18}/> }/>
+          </div>
         </div>
 
       </section>  

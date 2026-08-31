@@ -6,19 +6,6 @@
     color: var(--color-text);
 }
 
-.selected-projects::before {
-    content: "";
-    position: absolute;
-    inset: 196px 0 0;
-    z-index: -1;
-    background:
-        linear-gradient(rgba(125, 146, 119, 0.1) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(125, 146, 119, 0.1) 1px, transparent 1px);
-    background-size: 44px 44px;
-    opacity: 0.75;
-    pointer-events: none;
-}
-
 .selected-projects-header {
     position: relative;
     display: flex;
@@ -28,7 +15,7 @@
     min-height: 150px;
     background-color: var(--color-background-dark);
     color: var(--color-background);
-    padding: 1.7rem 3.75rem;
+    padding: 1.5rem 3.75rem;
     overflow: hidden;
 }
 
@@ -45,7 +32,7 @@
 
 .selected-projects-line h2,
 .selected-projects-index {
-    font-size: 3.75rem;
+    font-size: 2rem;
     line-height: 1;
     letter-spacing: 0;
 }
@@ -67,10 +54,17 @@
 
 .selected-projects-list {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 3rem;
-    margin: 2.5rem;
-    padding-bottom: 5rem;
-    align-items: stretch;
+    grid-template-columns: repeat(3, minmax(0, 360px));
+    gap: 2rem 4rem;
+    margin: 1rem 2.5rem;
+    padding-bottom: 4rem;
+    align-items: start;
+    justify-content: center;
 }
 
+.selected-projects-btn {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}

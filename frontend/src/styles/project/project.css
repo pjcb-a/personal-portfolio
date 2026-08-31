@@ -586,7 +586,7 @@
 .project-grid-card-image {
     position: relative;
     width: 100%;
-    aspect-ratio: 2 / 1;
+    aspect-ratio: 2.5 / 1;
     overflow: hidden;
     background-color: var(--color-muted);
     border-bottom: var(--border-standard);
@@ -618,10 +618,10 @@
 }
 
 .project-grid-card-header h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 1;
     letter-spacing: 0.04em;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.75rem;
 }
 
 .project-grid-card-header span {
@@ -660,7 +660,7 @@
     min-height: 0;
     width: 100%;
     box-sizing: border-box;
-    padding: 1.5rem;
+    padding: 1.2rem;
 }
 
 .project-grid-card:hover,
@@ -670,6 +670,7 @@
 }
 
 .project-grid-card-description {
+    font-size: 0.95rem;
     max-width: 100%;
     line-height: 1.45;
     letter-spacing: 0.01em;
@@ -677,7 +678,7 @@
 
 .project-grid-card-role {
     margin-top: auto;
-    padding-top: 1.2rem;
+    padding-top: 0.8rem;
 }
 
 .project-grid-card-role span {
@@ -700,7 +701,7 @@
     flex-wrap: wrap;
     gap: 1rem;
     margin-top: auto;
-    padding: 1.5rem 0 0;
+    padding-top: 1rem;
 }
 
 .project-grid-card-tools li {
@@ -709,4 +710,15 @@
     padding: 0.2rem 0.5rem;
     background-color: var(--color-accent-light);
     margin-bottom: 0.6rem;
+    transition:
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast),
+    background-color var(--transition-fast),
+    color var(--transition-fast);
+}
+
+.project-grid-card-tools li:hover {
+  background-color: var(--color-accent);
+  transform: var(--border-thick);
+  box-shadow: var(--shadow-small);
 }

@@ -44,7 +44,7 @@ export default function AboutSection() {
         >
             <div className="home-about-panel">
                 <header className="home-about-header" data-motion-item>
-                    <h2 id="home-about-title">About_Me</h2>
+                    <h2>About_Me</h2>
                     <p>03 / Profile</p>
                 </header>
 

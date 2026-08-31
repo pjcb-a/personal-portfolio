@@ -29,7 +29,7 @@ export const menuItems: MenuItem[] = [
         id: "resume",
         kind: "external",
         label: "Resume",
-        href: "/resume.pdf",
+        href: "/",
         openInNewTab: true,
         download: true,
     },
