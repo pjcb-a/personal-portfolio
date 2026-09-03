@@ -12,7 +12,7 @@ export default function CreativeMediaCard({
 }: CreativeMediaCardProps) {
     return (
         <article className="project-grid-card">
-
+        <a href={`/projects/${project.slug}`}>
             <div className="project-grid-card-image">
                 <img
                     src={project.image}
@@ -29,20 +29,13 @@ export default function CreativeMediaCard({
                         {project.subtitle}
                     </span>
                 </div>
-
-                <a
-                    href={`/projects/${project.slug}`}
-                    aria-label={`View ${project.title}`}
-                    >
-                    <ArrowUpRight size={16} />
-                </a>
             </div>
 
             <p className="project-grid-card-description">
                 {project.description}
             </p>
         </div>
-
+        </a>
         </article>
     );
 }

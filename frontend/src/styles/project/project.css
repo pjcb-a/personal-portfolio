@@ -631,27 +631,6 @@
     font-family: var(--font-heading);
 }
 
-.project-grid-card-header a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    width: 2.4rem;
-    height: 2.4rem;
-    border: var(--border-standard);
-    padding: 0;
-    transition:
-        background-color 0.2s ease,
-        color 0.2s ease,
-        transform 0.2s ease;
-}
-
-.project-grid-card-header a:hover {
-    color: var(--color-text);
-    background-color: var(--color-accent);
-    transform: var(--transition-fast);
-}
-
 .project-grid-card-content {
     display: flex;
     flex-direction: column;

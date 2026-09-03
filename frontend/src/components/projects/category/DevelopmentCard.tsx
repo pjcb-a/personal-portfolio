@@ -12,51 +12,47 @@ export default function DevelopmentCard({
     project, }: DevelopmentCardProps) {
         return (
             <article className="project-grid-card">
-                
-                <div className="project-grid-card-image">
-                    <img
-                        src={project.image}
-                        alt={project.title}
-                    />
-                </div>
-
-            <div className="project-grid-card-content">
-                <div className="project-grid-card-header">
-                    <div>
-                        <h3>{project.title}</h3>
-
-                        <span>
-                            {project.subtitle}
-                        </span>
+                <a href={`/projects/${project.slug}`}>
+                    <div className="project-grid-card-image">
+                        <img
+                            src={project.image}
+                            alt={project.title}
+                            />
                     </div>
 
-                    <   a 
-                        href={`/projects/${project.slug}`}
-                        >
-                            <ArrowUpRight size={20} />
-                        </a>
-                </div>
+                    <div className="project-grid-card-content">
+                        <div className="project-grid-card-header">
+                            <div>
+                                <h3>{project.title}</h3>
 
-                <p className="project-grid-card-description">
-                    {project.description}
-                </p>
+                                <span>
+                                    {project.subtitle}
+                                </span>
+                            </div>
 
-                <div className="project-grid-card-role">
-                    <span>ROLE</span>
+                        </div>
 
-                    <p>
-                        {project.role.join(" / ")}
-                    </p>
-                </div>
+                        <p className="project-grid-card-description">
+                            {project.description}
+                        </p>
 
-                <ul className="project-grid-card-tools">
-                    {project.tools.map((tool) => (
-                        <li key={tool}>
-                            {tool}
-                        </li>
-                    ))}
-                </ul>
-            </div>
+                        <div className="project-grid-card-role">
+                            <span>ROLE</span>
+
+                            <p>
+                                {project.role.join(" / ")}
+                            </p>
+                        </div>
+
+                        <ul className="project-grid-card-tools">
+                            {project.tools.map((tool) => (
+                                <li key={tool}>
+                                    {tool}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </a>
             </article>
         );
 }
