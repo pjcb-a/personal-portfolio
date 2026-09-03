@@ -10,6 +10,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
+    border-bottom: var(--border-thick);
+    margin: 1rem;
 }
 
 .about-container-intro {
@@ -17,6 +19,7 @@
     flex-direction: column;
     align-items: center;
 }
+
 
 
 /* Start of about page */
@@ -102,3 +105,69 @@
     font-weight: 600;
 }
 
+
+
+/* About Container Skills */
+.about-container-skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-container-skills-header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem;
+    gap: 3rem;
+}
+
+.about-container-skills-header h2 {
+    font-size: 2rem;
+}
+
+
+/* skills header  */
+.about-container-skills-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dot {
+    border: var(--border-light);
+}
+
+
+
+/* About chart  */
+.about-chart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about-chart-header {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.about-chart-header .box {
+    margin-left: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: var(--border-standard);
+    color: var(--color-accent);
+}
+
+.about-chart-container h3 {
+    font-size: 1.5rem;
+}
+
+.about-chart-content {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    column-gap: 2rem;
+}

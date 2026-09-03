@@ -2,9 +2,9 @@ import type { Tool } from "../types/tools";
 
 import { FaReact, FaFigma, FaHtml5, FaVuejs } from "react-icons/fa";
 import { DiPhotoshop } from "react-icons/di";
-import { FaCss3Alt } from "react-icons/fa6";
-import { BsJavascript, BsTypescript } from "react-icons/bs";
-import { SiTailwindcss } from "react-icons/si";
+import { FaCss3Alt,  } from "react-icons/fa6";
+import { BsJavascript, BsTypescript, BsGithub } from "react-icons/bs";
+import { Si1001Tracklists, SiTailwindcss } from "react-icons/si";
 import { IoColorPalette } from "react-icons/io5";
 
 export const Tools: Tool[] = [
@@ -57,5 +57,15 @@ export const Tools: Tool[] = [
         id: "TypeScript",
         label: "Typescript",
         icon: BsTypescript
+    },
+    {
+        id: "Git/Github",
+        label: "Git/Github",
+        icon: BsGithub
+    },
+    {
+        id: "VSCode",
+        label: "VSCode",
+        icon: Si1001Tracklists
     }
 ]

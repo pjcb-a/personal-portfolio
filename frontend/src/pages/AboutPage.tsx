@@ -1,13 +1,14 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Dot } from "lucide-react";
 import Button from "../components/common/Button";
 import PageTitle from "../components/layout/PageTitle";
 
 import "../styles/about/about.css"
 import AboutCard from "../components/about/AboutCard";
+import AboutChart from "../components/about/AboutChart";
 
 export default function AboutPage() {
     return(
-        <div className="about-container">
+        <section className="about-container">
             
             <div className="about-container-grid">
 
@@ -25,6 +26,35 @@ export default function AboutPage() {
                 <AboutCard/>
             </div>
 
-        </div>
+            <div className="about-container-skills">
+                <div className="about-container-skills-header">
+                    <div className="about-container-skills-title">
+                        <div className="dot">
+                            <Dot size={14}/>
+                        </div>
+
+                        <h2>Creative Skills</h2>
+                    </div>
+                
+                    <div className="about-container-skills-description">
+                        <p>A collection of skills that shape how I design, and build. From visual concepts to functional digital experiences.</p>
+                    </div>
+
+                    <div className="about-container-skills-title">
+                        <div className="dot">
+                            <Dot size={14}/>
+                        </div>
+
+                        <h2>Tools I Use</h2>
+                    </div>
+                </div>
+
+                <div className="about-container-skills-content">
+                    <AboutChart title="Development"/>
+                </div>
+            </div>
+                
+
+        </section>
     );
 }
