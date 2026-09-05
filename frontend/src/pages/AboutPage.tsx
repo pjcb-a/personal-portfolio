@@ -11,6 +11,7 @@ import Cta from "../components/common/Cta";
 
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
+import AboutStudy from "../components/about/AboutStudy";
 
 export default function AboutPage() {
     return(
@@ -61,7 +62,8 @@ export default function AboutPage() {
                     <AboutChart title="Development"/>
                     <AboutTools/>
                 </div>
-
+                
+                <AboutStudy/>
                 <AboutStats/>
             </div>
 
