@@ -18,7 +18,7 @@ export default function AboutChart({
         <div className="about-chart-container">
 
             <div className="about-chart-header">
-                <div className="box"></div>
+                <div className="about-box"></div>
                 <h3>{title}</h3>
             </div>
 

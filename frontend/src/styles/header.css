@@ -1,7 +1,3 @@
-:root {
-  --site-header-space: 8.0625rem;
-}
-
 .site-header {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
@@ -27,29 +23,4 @@
 
 .header-year {
   justify-self: end;
-}
-
-@media (max-width: 760px) {
-  :root {
-    --site-header-space: 18.4375rem;
-  }
-
-  .site-header {
-    grid-template-columns: 1fr;
-    justify-items: stretch;
-    gap: 0.8rem;
-    padding: 1.5rem 1rem;
-    overflow: hidden;
-  }
-
-  .header-data {
-    justify-self: center;
-    font-size: 0.75rem;
-    text-align: center;
-  }
-
-  .header-location,
-  .header-year {
-    justify-self: center;
-  }
 }

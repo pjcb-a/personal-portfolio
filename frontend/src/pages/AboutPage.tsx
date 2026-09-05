@@ -5,11 +5,18 @@ import PageTitle from "../components/layout/PageTitle";
 import "../styles/about/about.css"
 import AboutCard from "../components/about/AboutCard";
 import AboutChart from "../components/about/AboutChart";
+import AboutTools from "../components/about/AboutTools";
+import AboutStats from "../components/about/AboutStats";
+import Cta from "../components/common/Cta";
+
+import Header from "../components/layout/Header";
+import Footer from "../components/layout/Footer";
 
 export default function AboutPage() {
     return(
-        <section className="about-container">
+        <section className="container">
             
+            <Header/>
             <div className="about-container-grid">
 
                 <div className="about-container-intro">
@@ -50,11 +57,16 @@ export default function AboutPage() {
                 </div>
 
                 <div className="about-container-skills-content">
+                    <AboutChart title="Design"/>
                     <AboutChart title="Development"/>
+                    <AboutTools/>
                 </div>
-            </div>
-                
 
+                <AboutStats/>
+            </div>
+
+            <Cta/>
+        <Footer/>
         </section>
     );
 }

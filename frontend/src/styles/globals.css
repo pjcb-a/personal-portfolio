@@ -3,7 +3,7 @@
 html {
   scroll-behavior: smooth;
   min-width: 320px;
-  background-color: var(--color-background);
+  background-color: var(--color-accent);
 }
 
 body {

@@ -35,6 +35,7 @@
     background-color: var(--color-background);
     color: var(--color-text);
     box-shadow: 2px 2px 0 var(--color-accent);
+    transform: translateY(-2px);
 }
 
 .button--secondary {
@@ -46,6 +47,7 @@
     background-color: var(--color-background);
     color: var(--color-accent);
     box-shadow: 2px 2px 0 var(--color-accent);
+    transform: translateY(-2px);
 }
 
 .button--outline {
@@ -58,6 +60,7 @@
     background-color: var(--color-accent-light);
     color: var(--color-text);
     box-shadow: 2px 2px 0 var(--color-accent);
+    transform: translateY(-2px);
 }
 
 .button-icon {

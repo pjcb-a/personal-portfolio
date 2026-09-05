@@ -1,11 +1,3 @@
-.about-container {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color-background);
-    margin: 1.5rem;
-    border: var(--border-thick);
-}
-
 .about-container-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -108,6 +100,11 @@
 
 
 /* About Container Skills */
+.about-container-skills-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .about-container-skills {
     display: flex;
     flex-direction: column;
@@ -145,23 +142,40 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    margin: 1.5rem 1rem;
+    border: var(--border-thick);
+    padding: 1.5rem;
+    background-color: var(--color-muted-accent);
+    box-shadow: var(--shadow-large);
+     transition: 
+        box-shadow var(--transition-standard),
+        transform var(--transition-standard);
+}
+
+.about-chart-container:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-small);
+
 }
 
 .about-chart-header {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 1rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: var(--border-light);
 }
 
-.about-chart-header .box {
-    margin-left: 1rem;
-    width: 1.5rem;
-    height: 1.5rem;
-    border: var(--border-standard);
-    color: var(--color-accent);
+.about-box {
+    width: 1.3rem;
+    height: 1.3rem;
+    border: var(--border-medium);
+    background-color: var(--color-accent);
 }
 
-.about-chart-container h3 {
+.about-chart-header h3 {
     font-size: 1.5rem;
 }
 
@@ -170,4 +184,134 @@
     grid-template-columns: 1fr auto;
     align-items: center;
     column-gap: 2rem;
+}
+
+.about-chart-title {
+    display: flex;
+    flex-direction: column;
+    gap: 1.53rem;
+    justify-content: center;
+}
+
+.about-chart-title h3 {
+    font-size: 1rem;
+}
+
+.about-chart-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.chart-bar-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.chart-level {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--color-muted);
+}
+
+.chart-bar {
+    display: flex;
+    gap: 0.45rem;
+}
+
+.chart-box {
+    width: 1.5rem;
+    height: 1rem;
+    border: var(--border-medium);
+    background: transparent;
+    transition: 
+        background-color var(--transition-standard);
+}
+
+.chart-box:hover {
+    background-color: var(--color-accent-light);
+}
+
+.chart-box.filled {
+    background-color: var(--color-accent-bar);
+}
+
+.chart-box.filled:hover {
+    background-color: var(--color-accent);
+}
+
+
+
+/* Tools */
+.about-tools-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 1.5rem 1rem;
+}
+
+.tool-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.4rem;
+    border: var(--border-medium);
+    margin: 1rem 0.5rem;
+    padding: 1rem 0.5rem;
+    box-shadow: var(--shadow-medium-accent);
+    justify-content: center;
+    font-weight: 700;
+    transition: 
+        background-color var(--transition-standard),
+        box-shadow var(--transition-standard),
+        transform var(--transition-standard);
+}
+
+.tool-card:hover {
+    background-color: var(--tool-color);
+    box-shadow: var(--shadow-small);
+    transform: translateY(-2px);
+}
+
+.tool-card:hover::before {
+    content: "";
+    position: absolute;
+    inset: -10px;
+    z-index: -1;
+    background: radial-gradient(
+        circle at center,
+        color-mix(in srgb, var(--tool-color) 45%, transparent),
+        transparent 70%
+    );
+    filter: blur(12px);
+}
+
+
+
+/* About Education */
+.about-educ-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+    background-color: var(--color-text);
+    border: var(--border-thick-light);
+    box-shadow: var(--shadow-medium-hover);
+    gap: 1rem;
+}
+
+.about-educ-container h2 {
+    color: var(--color-accent-hover);
+    font-size: 2.5rem;
+}
+
+.about-educ-container span {
+    color: var(--color-background);
+    font-family: var(--font-heading);
+}   
+
+.educ-data {
+    gap: 5rem;
+    max-width: 100px;
 }

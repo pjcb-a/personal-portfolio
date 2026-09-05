@@ -6,6 +6,8 @@ import AboutSection from "../components/home/AboutSection";
 import ExperienceSection from "../components/home/ExperienceSection";
 import CtaSection from "../components/home/CtaSection";
 import { useHomeMotion } from "../hooks/useHomeMotion";
+import Header from "../components/layout/Header";
+import Footer from "../components/layout/Footer";
 
 function HomePage() {
     const homeRef = useRef<HTMLDivElement>(null);
@@ -14,6 +16,7 @@ function HomePage() {
 
     return(
         <div className="homepage" ref={homeRef}>
+        <Header/>
         <HeroSection />
         <ProjectSection />
 
@@ -21,6 +24,7 @@ function HomePage() {
 
         <ExperienceSection />
         <CtaSection />
+        <Footer/>
         </div>
     );
 }
