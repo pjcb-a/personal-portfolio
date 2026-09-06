@@ -8,11 +8,11 @@ import ExperiencePage from "./pages/ExperiencePage";
 import ContactPage from "./pages/ContactPage";
 import ErrorPage from "./pages/ErrorPage";
 
-function App() {
+export default function App() {
   return (
     <Routes>
       <Route path="/" element={<PageLayout/>}>
-        <Route index path="home" element={<HomePage/>}/>
+        <Route index element={<HomePage/>}/>
 
         <Route path="projects" element={<ProjectsPage/>}/>
         <Route path="about" element={<AboutPage/>}/>
@@ -24,5 +24,3 @@ function App() {
     </Routes>
   );
 }
-
-export default App
