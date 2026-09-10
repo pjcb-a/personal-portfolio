@@ -9,11 +9,13 @@ import ContactPage from "./pages/ContactPage";
 import ErrorPage from "./pages/ErrorPage";
 
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import { Analytics } from "@vercel/analytics/react"
 
 export default function App() {
   return (
     <div>     
     <SpeedInsights/>
+    <Analytics/>
       <Routes>
         <Route path="/" element={<PageLayout/>}>
           <Route index element={<HomePage/>}/>
