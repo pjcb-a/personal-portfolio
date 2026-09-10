@@ -9,15 +9,12 @@ import AboutTools from "../components/about/AboutTools";
 import AboutStats from "../components/about/AboutStats";
 import Cta from "../components/common/Cta";
 
-import Header from "../components/layout/Header";
-import Footer from "../components/layout/Footer";
 import AboutStudy from "../components/about/AboutStudy";
 
 export default function AboutPage() {
     return(
-        <section className="container">
-            
-            <Header/>
+        <section className="about-container">
+
             <div className="about-container-grid">
 
                 <div className="about-container-intro">
@@ -68,7 +65,6 @@ export default function AboutPage() {
             </div>
 
             <Cta/>
-        <Footer/>
         </section>
     );
 }

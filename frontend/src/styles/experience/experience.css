@@ -1,0 +1,66 @@
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    margin: 1rem;    
+}
+
+.experience-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-accent);
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.experience-timeline {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.exp-box-container {
+    border: var(--border-medium);
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    font-family: var(--font-sub);
+    background-color: var(--color-background);
+}
+
+.exp-card {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 1.8rem;
+    background-color: var(--color-background);
+    border: var(--border-thick);
+    box-shadow: var(--shadow-medium);
+    transition: 
+        transform var(--transition-standard),
+        box-shadow var(--transition-standard), ;
+}
+
+.exp-period {
+    color: var(--color-accent);
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0.5rem 0;letter-spacing: 0.08rem;
+}
+
+.exp-card h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.06rem;
+}
+
+.exp-org {
+    color: var(--color-muted);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.9rem;
+}
+
+.exp-card p {
+    letter-spacing: 0.08rem;
+}

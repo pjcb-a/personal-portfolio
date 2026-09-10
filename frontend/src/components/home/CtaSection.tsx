@@ -4,7 +4,7 @@ import { SocialIcons } from "../../data/socials";
 
 import "../../styles/home/ctasection.css";
 
-const resumeHref = "/202400832.pdf";
+const resumeHref = "src/assets/files/John_Paul_Jacob_Resume.pdf";
 const socialActions = SocialIcons.filter((item) =>
     ["LinkedIn", "Github"].includes(item.id),
 );
