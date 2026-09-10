@@ -11,8 +11,6 @@ import "./styles/variables.css";
 import "./styles/globals.css";
 import "./styles/typography.css";
 
-import { SpeedInsights } from "@vercel/speed-insights/react"
-
 const rootElement = document.getElementById("root");
 
 if (!rootElement) {
@@ -22,7 +20,6 @@ if (!rootElement) {
 createRoot(rootElement).render(
   <StrictMode>
     <BrowserRouter>
-    <SpeedInsights/>
       <App />
     </BrowserRouter>
   </StrictMode>

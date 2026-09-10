@@ -8,19 +8,24 @@ import ExperiencePage from "./pages/ExperiencePage";
 import ContactPage from "./pages/ContactPage";
 import ErrorPage from "./pages/ErrorPage";
 
+import { SpeedInsights } from "@vercel/speed-insights/react"
+
 export default function App() {
   return (
-    <Routes>
-      <Route path="/" element={<PageLayout/>}>
-        <Route index element={<HomePage/>}/>
+    <div>     
+    <SpeedInsights/>
+      <Routes>
+        <Route path="/" element={<PageLayout/>}>
+          <Route index element={<HomePage/>}/>
 
-        <Route path="projects" element={<ProjectsPage/>}/>
-        <Route path="about" element={<AboutPage/>}/>
-        <Route path="experience" element={<ExperiencePage/>}/>
-        <Route path="contact" element={<ContactPage/>}/>
-        
-        <Route path="*" element={<ErrorPage/>}/>
-      </Route>
-    </Routes>
+          <Route path="projects" element={<ProjectsPage/>}/>
+          <Route path="about" element={<AboutPage/>}/>
+          <Route path="experience" element={<ExperiencePage/>}/>
+          <Route path="contact" element={<ContactPage/>}/>
+          
+          <Route path="*" element={<ErrorPage/>}/>
+        </Route>
+      </Routes>
+    </div>
   );
 }
