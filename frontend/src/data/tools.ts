@@ -1,6 +1,6 @@
 import type { Tool } from "../types/tools";
 
-import { FaReact, FaFigma, FaHtml5, FaVuejs, FaFastForward } from "react-icons/fa";
+import { FaReact, FaFigma, FaHtml5, FaVuejs } from "react-icons/fa";
 import { DiPhotoshop } from "react-icons/di";
 import { FaCss3Alt } from "react-icons/fa6";
 import { BsJavascript, BsTypescript, BsGithub } from "react-icons/bs";
