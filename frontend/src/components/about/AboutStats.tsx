@@ -1,6 +1,8 @@
 import { projects } from "../../data/projects";
 
-export default function AboutEdu() {
+import "../../styles/about/about.css"
+
+export default function AboutStats() {
     const totalProjects = projects.length;
     return(
         <section className="about-educ-container">

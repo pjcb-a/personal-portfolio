@@ -10,27 +10,37 @@ export default function ExperiencePage() {
 
             <div className="experience-grid">
                 <PageTitle pageIndex={2}/>
-                <div className="experience-line"></div>
             </div>
             
             <div className="experience-content">
                
-                {experiences.map((exp) => (
-                    <div className="experience-timeline">
+                <div className="experience-timeline">
 
-                        <div className="exp-box-container">
-                            0{exp.count}
+                    {experiences.map((exp) => (
+                        <div className="experience-event" key={exp.id}>
+
+                            <span className="exp-marker">
+                                    <span className="exp-count">
+                                        0{exp.count}
+                                    </span>
+                                </span>
+
+                                <div className="exp-card">
+                                    <span className="exp-period">{exp.period}</span>
+
+                                    <h3> {exp.title} </h3>
+
+                                    <span className="exp-org"> {exp.organization} </span>
+                                   
+                                    <p> {exp.description} </p>
+                                </div>
                         </div>
-
-                            <div className="exp-card" key={exp.id}>
-                                <span className="exp-period">{exp.period}</span>
-                                <h3> {exp.title} </h3>
-                                <span className="exp-org"> {exp.organization} </span>
-                                <p> {exp.description} </p>
-                            </div>
-                    </div>
                     ))}
-                </div>
+                </div> 
+                
+                 
+            </div>
+                
                 <Cta/>
         </section>
     );

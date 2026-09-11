@@ -1,10 +1,12 @@
+.projects-container {
+  margin: 1rem;
+}
+
 /* Project Page CSS */
 .project-page-line {
     border-bottom: var(--border-thick); 
     margin: 1rem 2rem;  
 }
-
-
 
 /* Project Grid CSS */
 .project-grid-container {

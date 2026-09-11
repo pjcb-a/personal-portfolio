@@ -9,10 +9,7 @@
 .about-container-intro {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
-
-
 
 /* Start of about page */
 .about-card-container {
@@ -103,6 +100,7 @@
 .about-container-skills-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin: 0 2rem;
 }
 
 .about-container-skills {
@@ -129,6 +127,7 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    margin-left: 1.5rem;
 }
 
 .dot {
@@ -155,7 +154,6 @@
 .about-chart-container:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-small);
-
 }
 
 .about-chart-header {
@@ -249,6 +247,18 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 1.5rem 1rem;
+    border: var(--border-thick);
+    padding: 1.5rem;
+    background-color: var(--color-muted-accent);
+    box-shadow: var(--shadow-large);
+     transition: 
+        box-shadow var(--transition-standard),
+        transform var(--transition-standard);
+}
+
+.about-tools-container:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-small);
 }
 
 .tool-card {
@@ -293,10 +303,10 @@
 .about-educ-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin: 2rem 1rem;
-    padding: 1.5rem;
-    background-color: var(--color-text);
-    border: var(--border-thick-light);
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: var(--color-bg);
+    border-top: var(--border-thick-light);
     box-shadow: var(--shadow-medium-hover);
     gap: 1rem;
 }
@@ -323,7 +333,7 @@
 .about-study-container {
     display: flex;
     flex-direction: column;
-    margin: 2rem 1rem;
+    margin: 2rem 3rem;
 }
 
 .about-study-title {

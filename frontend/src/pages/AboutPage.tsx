@@ -8,7 +8,6 @@ import AboutChart from "../components/about/AboutChart";
 import AboutTools from "../components/about/AboutTools";
 import AboutStats from "../components/about/AboutStats";
 import Cta from "../components/common/Cta";
-
 import AboutStudy from "../components/about/AboutStudy";
 
 export default function AboutPage() {

@@ -26,7 +26,7 @@ export default function Footer() {
             <div className="footer-main">
               <div className="footer-brand">
                 
-                <p className="footer-logo"> <Link to="/home"> JP.DEV</Link></p>
+                <p className="footer-logo"> <Link to="/"> JP.DEV</Link></p>
                 
 
                 <p className="footer-description">Designing with purpose.<br />
@@ -59,7 +59,7 @@ export default function Footer() {
 
                 <ul className="footer-link-list">
                   <li>
-                    <Link to="/home">Home</Link>
+                    <Link to="/">Home</Link>
                   </li>
 
                   {menuItems.map((item) => (

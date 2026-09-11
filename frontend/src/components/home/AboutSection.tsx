@@ -55,25 +55,27 @@ export default function AboutSection() {
                         </p>
 
                         <p className="home-about-copy" data-motion-item>
-                            A 3rd year BS - IT student at Ateneo de Naga
-                            University who enjoys working between creativity
-                            and technology.
-                        </p>
-
-                        <p className="home-about-copy" data-motion-item>
                             I create visual materials, user-focused interfaces,
                             and responsive web experiences that balance
                             creativity, clarity, and function.
                         </p>
 
-                        <div className="home-about-action" data-motion-item>
-                            <Button
-                                label="More About Me"
-                                href="/about"
-                                variant="primary"
-                                icon={<ArrowUpRight size={18} />}
-                            />
-                        </div>
+                        <p className="home-about-name" data-motion-item>
+                            <strong>Background</strong>
+                        </p>
+                        
+                        <p className="home-about-copy" data-motion-item>
+                            Bachelor of Science in Information Technology student at Ateneo de Naga
+                            University who enjoys working between creativity
+                            and technology.
+                        </p>
+
+                        <Button 
+                        label="More About Me"
+                        href="/about"
+                        variant="outline"
+                        icon={<ArrowUpRight/>}
+                        />
                     </div>
 
                     <div className="home-about-highlights">
