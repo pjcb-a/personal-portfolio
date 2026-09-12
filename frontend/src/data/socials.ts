@@ -4,6 +4,7 @@ import { SiGmail } from "react-icons/si"
 import {
     FaBehance, FaGithub, FaLinkedin 
 } from "react-icons/fa"
+import { FileUser } from "lucide-react";
 
 export const SocialIcons: SocialIcon[] = [
     {
@@ -30,4 +31,10 @@ export const SocialIcons: SocialIcon[] = [
         href: "mailto:jacob.johnpaul15@gmail.com",
         icon: SiGmail
     },
+    {
+        id: "View Resume",
+        label: "resume",
+        href: "src/assets/files/John_Paul_Jacob_Resume.pdf",
+        icon: FileUser
+    }
 ] 
