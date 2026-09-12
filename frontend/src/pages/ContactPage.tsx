@@ -4,9 +4,8 @@ import { SocialIcons } from "../data/socials";
 
 import "../styles/contact/contact.css"
 
-import React, {useEffect, useState, type FormEvent} from "react";
-import { ArrowUpRight, FileText } from "lucide-react";
-import { data } from "react-router";
+import React, { useState, type FormEvent } from "react";
+import { ArrowUpRight } from "lucide-react";
 import Button from "../components/common/Button";
 
 type Purpose = 
@@ -23,9 +22,8 @@ interface FormData {
     message: string;
 }
 
-type NotificationType = "success" | "error" | null;
+// type NotificationType = "success" | "error" | null;
 
-const resumeHref = "src/assets/files/John_Paul_Jacob_Resume.pdf";
 const socialActions = SocialIcons.filter((item) =>
     ["LinkedIn", "Github", "View Resume"].includes(item.id),
 );
