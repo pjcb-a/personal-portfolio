@@ -4,7 +4,6 @@ import { SiGmail } from "react-icons/si"
 import {
     FaBehance, FaGithub, FaLinkedin 
 } from "react-icons/fa"
-import { FileUser } from "lucide-react";
 
 export const SocialIcons: SocialIcon[] = [
     {
