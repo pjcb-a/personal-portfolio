@@ -206,6 +206,8 @@ export default function HeroSection() {
 
     return(
         <div id="home-hero" ref={heroRef} className="home-hero">
+
+        <div className="home-center">
             <div className="main-hero" data-hero-motion>
                 <p>
                     <UserRound 
@@ -218,22 +220,25 @@ export default function HeroSection() {
                 </p>
             </div>
             
-        <div className="hero-content">
+            <div className="hero-content">
 
-            <div className="hero-role">
-                <h1 className="hero-title">
-                   <span className="hero-title-primary" data-hero-motion> GRAPHIC DESIGNER </span>
-    
-                    <span className="hero-title-secondary" data-hero-motion> &amp; FRONTEND DEVELOPER</span>
-                </h1>
-            </div>
+                <div className="hero-role">
+                    <h1 className="hero-title">
+                    <span className="hero-title-primary" data-hero-motion> GRAPHIC DESIGNER </span>
+        
+                        <span className="hero-title-secondary" data-hero-motion> &amp; FRONTEND DEVELOPER</span>
+                    </h1>
+                </div>
 
-            <div className="description" data-hero-motion>
-                <p>I turn ideas into clear visual systems and responsive digital experiences that feel intentional, useful, and human.</p>
+                <div className="description" data-hero-motion>
+                    <p>I turn ideas into clear visual systems and responsive digital experiences that feel intentional, useful, and human.</p>
+                </div>
             </div>
         </div>
 
-        
+
+
+        <div className="hero-actions">
             <div className="hero-btn" data-hero-motion>
                 <Button
                 label="View Projects"
@@ -258,7 +263,7 @@ export default function HeroSection() {
                                 className="availability-check"
                                 viewBox="0 0 24 24"
                                 aria-hidden="true"
-                            >
+                                >
                                 <circle
                                     className="availability-circle"
                                     cx="12"
@@ -269,7 +274,7 @@ export default function HeroSection() {
                                 <path
                                     className="availability-check-path"
                                     d="M7 12.5L10.5 16L17 8.5"
-                                />
+                                    />
                             </svg>
                         </div>
 
@@ -277,6 +282,8 @@ export default function HeroSection() {
                     </div>
                 </div>
             </div>
+        
+        </div> 
             
             
             <div className="tools" data-hero-motion>
