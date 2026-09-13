@@ -1,22 +1,15 @@
 .contact-form {
     border: var(--border-thick);
     margin: 3rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-}
-
-
-
-/* ERROR MODAL */
-.contact-error {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: stretch;
 }
 
 
@@ -53,6 +46,7 @@
     flex-direction: column;
     gap: 2rem;
     padding: 2rem;
+    flex: 1;
 }
 
 .form-info {
@@ -94,6 +88,11 @@
 
 .form-group input:hover, .form-group input:focus, .form-group select:hover, .form-group select:focus, .form-group textarea:hover, .form-group textarea:focus {
     box-shadow: var(--shadow-medium-hover);
+}
+
+.form-submit {
+    display: grid;
+    margin-top: auto;
 }
 
 .contact-submit {
@@ -162,4 +161,57 @@
     display: grid;
     margin-bottom: 1rem;
     text-transform: uppercase;
+}
+
+.contact-error { 
+    position: fixed; 
+    top: 24px;
+    right: 24px; 
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: min(400px, calc(100vw - 48px));
+    padding: 16px 18px; 
+    background: #fff; 
+    border: var(--border-medium-muted); 
+    box-shadow: var(--shadow-large-danger); 
+    animation: contactErrorIn 0.25s ease-out; 
+} 
+
+.contact-error-icon { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    flex-shrink: 0; 
+    width: 30px; 
+    height: 30px; 
+    background: #f3d0d0; 
+    color: #d32f2f; 
+    font-size: 15px; 
+    font-weight: 700; 
+} 
+
+.contact-error p { 
+    flex: 1; 
+    margin: 0; 
+    color: #333; 
+    font-size: 14px; 
+    line-height: 1.4; 
+} 
+
+.contact-error-close { 
+    flex-shrink: 0; 
+    padding: 0; 
+    border: none; 
+    background: transparent; 
+    color: #999; 
+    font-size: 22px; 
+    line-height: 1; 
+    cursor: pointer; 
+    transition: color 0.2s ease; 
+}
+
+.contact-error-close:hover {
+     color: #222; 
 }

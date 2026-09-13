@@ -29,6 +29,8 @@ export default function ProjectSection() {
                 <CreativeMediaCard project={projects[1]}/>
                 <PosterCard project={projects[2]}/>
 
+        </div>
+        
           <div className="selected-projects-btn">
             <Button 
               label='View All Projects'
@@ -36,7 +38,6 @@ export default function ProjectSection() {
               variant='outline'
               icon={ <ArrowUpRight size={18}/> }/>
           </div>
-        </div>
 
       </section>  
     );

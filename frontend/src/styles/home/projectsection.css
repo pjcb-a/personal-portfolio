@@ -1,4 +1,6 @@
 .selected-projects {
+    width: 100%;
+    min-height: 100svh;
     position: relative;
     isolation: isolate;
     overflow: hidden;
@@ -55,7 +57,7 @@
 .selected-projects-list {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 360px));
-    gap: 2rem 4rem;
+    gap: 4rem;
     margin: 2rem 2.5rem;
     padding-bottom: 4rem;
     align-items: start;

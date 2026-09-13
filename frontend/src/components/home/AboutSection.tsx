@@ -70,12 +70,14 @@ export default function AboutSection() {
                             and technology.
                         </p>
 
-                        <Button 
-                        label="More About Me"
-                        href="/about"
-                        variant="outline"
-                        icon={<ArrowUpRight/>}
-                        />
+                        <div className="home-about-action">
+                            <Button 
+                            label="More About Me"
+                            href="/about"
+                            variant="outline"
+                            icon={<ArrowUpRight/>}
+                            />
+                        </div>
                     </div>
 
                     <div className="home-about-highlights">

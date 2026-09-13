@@ -24,11 +24,20 @@ interface FormData {
 
 // type NotificationType = "success" | "error" | null;
 
-const socialActions = SocialIcons.filter((item) =>
-    ["LinkedIn", "Github", "View Resume"].includes(item.id),
-);
-
-
+const purposeInfo = [
+    {
+        id: "Internship"
+    },
+    {
+        id: "Freelance Project"
+    },
+    {
+        id: "Collaboration"
+    },
+    {
+        id: "Others"
+    }
+]
 const contactInfo = [
     {
         id: "Email",
@@ -127,7 +136,7 @@ export default function ContactPage() {
 
         {error && (
             <div className="contact-error" role="alert">
-                <div className="contact-error-icon">!</div>
+                <h1 className="contact-error-icon">!</h1>
                 <p>{error}</p>
 
                 <button
@@ -148,83 +157,75 @@ export default function ContactPage() {
 
                         <span>form.txt</span>
                     </div>
+                    
+                            <form
+                                className="contact-forms"
+                                onSubmit={handleSubmit}
+                                noValidate
+                                >
 
-                        <form
-                            className="contact-forms"
-                            onSubmit={handleSubmit}
-                            noValidate
-                            >
+                                    <div className="form-info">
+                                        <div className=" form-group">
+                                        <label htmlFor="name">Name</label>
 
-                                <div className="form-info">
-                                    <div className=" form-group">
-                                    <label htmlFor="name">Name</label>
-
-                                        <input 
-                                        type="text" 
-                                        id="name" 
-                                        name="name" 
-                                        value={formData.name}
-                                        onChange={handleChange}
-                                        placeholder="Enter Name"/>
-                                    </div>
-                                
-                                    <div className="form-group">
-                                    <label htmlFor="email">Email</label>
+                                            <input 
+                                            type="text" 
+                                            id="name" 
+                                            name="name" 
+                                            value={formData.name}
+                                            onChange={handleChange}
+                                            placeholder="Enter Name"/>
+                                        </div>
                                     
-                                    <input 
-                                    type="email" 
-                                    id="email" 
-                                    name="email"
-                                    value={formData.email}
-                                    onChange={handleChange}
-                                    placeholder="you@email.com"/>
-                                    </div>
-                                </div>
-
-                                <div className="form-group purpose">
-                                    <label htmlFor="purpose">What's this about?</label>
-
-                                        <select 
-                                        id="purpose" 
-                                        name="purpose" 
-                                        value={formData.purpose}
+                                        <div className="form-group">
+                                        <label htmlFor="email">Email</label>
+                                        
+                                        <input 
+                                        type="email" 
+                                        id="email" 
+                                        name="email"
+                                        value={formData.email}
                                         onChange={handleChange}
-                                        >
-                                        <option value="" disabled>
-                                            Select type
-                                        </option>
+                                        placeholder="you@email.com"/>
+                                        </div>
+                                    </div>
 
-                                        <option value="Internship">
-                                            Internship
-                                        </option>
+                                    <div className="form-group purpose">
+                                        <label htmlFor="purpose">What's this about?</label>
 
-                                        <option value="Freelance Project">
-                                            Freelance Project
-                                        </option>
+                                            <select 
+                                            id="purpose" 
+                                            name="purpose" 
+                                            value={formData.purpose}
+                                            onChange={handleChange}
+                                            >
 
-                                            <option value="Collaboration">
-                                            Collaboration
-                                            </option>
+                                                <option value="" disabled>
+                                                    Select type
+                                                </option>
 
-                                            <option value="Others">
-                                                Others
-                                            </option>
-                                        </select>
-                                </div>
+                                                {purposeInfo.map((purpose) => (
+                                                    <option value={purpose.id} key={purpose.id}>
+                                                        {purpose.id}
+                                                    </option>
+                                                ))}
+                                            </select>
+                                    </div>
 
-                                <div className="form-group message">
-                                    <label htmlFor="message">Message</label>
+                                    <div className="form-group message">
+                                        <label htmlFor="message">Message</label>
 
-                                    <textarea
-                                    id="message"
-                                    name="message"
-                                    value={formData.message}
-                                    onChange={handleChange}
-                                    placeholder="Tell me about your idea..."
-                                    rows={6}
-                                    />
-                                </div>
+                                        <textarea
+                                        id="message"
+                                        name="message"
+                                        value={formData.message}
+                                        onChange={handleChange}
+                                        placeholder="Tell me about your idea..."
+                                        rows={6}
+                                        />
+                                    </div>
 
+                                <div className="form-submit">
                                     <button
                                     type="submit"
                                     className="contact-submit" 
@@ -234,6 +235,7 @@ export default function ContactPage() {
                                         <ArrowUpRight/>
                                     </div>
                                     </button>
+                                </div>
                          </form>
                      </section>
 
@@ -269,7 +271,7 @@ export default function ContactPage() {
                     </div>
 
                     <div className="info-section-actions">
-                            {socialActions.map((item) => {
+                            {SocialIcons.map((item) => {
                                 return (
                                     <div className="actions">
                                     <Button

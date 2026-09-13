@@ -30,11 +30,5 @@ export const SocialIcons: SocialIcon[] = [
         label: "email",
         href: "mailto:jacob.johnpaul15@gmail.com",
         icon: SiGmail
-    },
-    {
-        id: "View Resume",
-        label: "resume",
-        href: "src/assets/files/John_Paul_Jacob_Resume.pdf",
-        icon: FileUser
     }
 ] 

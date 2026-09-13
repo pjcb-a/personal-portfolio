@@ -28,6 +28,7 @@
   --color-accent-hover: #a4d596;
   --color-accent-bar: #0FBF3E;
   --color-accent-light: #dce4d8;
+  --color-danger: #e05050;
 
   /* Borders and shadows */
   --border-standard: 1px solid var(--color-text);
@@ -45,6 +46,7 @@
   --shadow-medium-hover: 4px 4px 0 var(--color-accent-hover);
   --shadow-large: 5px 5px 0 var(--color-text);
   --shadow-large-accent: 7px 7px 0 var(--color-accent);
+  --shadow-large-danger: 5px 5px 0 var(--color-danger);
 
   /* Typography */
   --font-heading:
