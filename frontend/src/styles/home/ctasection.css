@@ -1,5 +1,6 @@
 .home-cta {
     width: 100%;
+    min-height: 100svh;
     background-color: var(--color-background-dark);
     color: var(--color-background);
 }
