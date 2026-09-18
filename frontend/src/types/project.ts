@@ -16,4 +16,5 @@ export interface Project {
     tools: string[];
     image: string;
     featured: boolean;
+    link?: string;
 } 

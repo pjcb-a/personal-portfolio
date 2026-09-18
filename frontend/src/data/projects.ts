@@ -2,13 +2,13 @@ import type { Project } from "../types/project";
 
 import caresImage from "../assets/images/projects/cares.png"
 import subtrackImage from "../assets/images/projects/subtrack.png"
-import sdbsImage from "../assets/images/projects/adnul-sdbs.png"
 import techpassImage from "../assets/images/projects/techpass.png"
 import cnyImage from "../assets/images/projects/h-cny.png"
 import memoImage from "../assets/images/projects/memorandum.png"
 import clockImage from "../assets/images/projects/clock.png"
 import treesImage from "../assets/images/projects/trees.png"
 import laborImage from "../assets/images/projects/labor-day.png"
+import kasundoImage from "../assets/images/projects/Kasundo.png"
 
 export const projects: Project[] = [
   {
@@ -39,6 +39,7 @@ export const projects: Project[] = [
     image: caresImage,
 
     featured: true,
+    link: "https://adnucares.vercel.app/"
   },
 
   {
@@ -68,6 +69,7 @@ export const projects: Project[] = [
     image: techpassImage,
 
     featured: true,
+    link: "https://www.facebook.com/photo/?fbid=1092765879668560&set=pcb.1092765913001890"
   },
 
   {
@@ -151,27 +153,31 @@ export const projects: Project[] = [
     image: subtrackImage,
 
     featured: false,
+    link: "https://sub-track-frontend.vercel.app/"
   },
 
   {
     id: 6,
-    slug: "ADNU-L Scoring Database System",
-    title: "ADNU-L SDBS",
+    slug: "Kasundo",
+    title: "Kasundo",
     category: "development",
     categoryLabel: "DEVELOPMENT",
-    year: 2025,
-    subtitle: "Advanced Database Systems Project",
+    year: 2026,
+    subtitle: "Personal Project",
     description: "A comprehensive web-based scoring and management system for ADNU League events and competitions.",
     role: [
-      "Frontend Developer",
+      "Full-Stack Developer",
       "UI/UX Designer"
     ],
     tools: [
       "Figma",
-      "Vue"
+      "React Native",
+      "TailwindCSS",
+      "FastAPI"
     ],
-    image: sdbsImage,
+    image: kasundoImage,
     featured: false,
+    link: ""
   },
 
    {
@@ -226,6 +232,7 @@ export const projects: Project[] = [
     image: cnyImage,
 
     featured: false,
+    link: "https://www.facebook.com/photo/?fbid=1024251866395845&set=a.623222173165485"
   },
 
   {
@@ -255,5 +262,6 @@ export const projects: Project[] = [
     image: memoImage,
 
     featured: false,
+    link: "https://www.facebook.com/photo/?fbid=973698708117828&set=a.623222173165485"
   },
 ];

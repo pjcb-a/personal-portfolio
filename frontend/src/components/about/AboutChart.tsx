@@ -24,37 +24,34 @@ export default function AboutChart({
 
             <div className="about-chart-content">
 
-                <div className="about-chart-title">
-                    {filteredCharts.map((chart) => (
-                        <h3 className="chart-title"
-                             key={chart.title}>
-                                {chart.title}
-                        </h3>
-                    ))}
-                </div>
-                
-                <div className="about-chart-bars">
-                    {filteredCharts.map((chart) => (
-                        <div className="chart-bar-wrapper"
-                            key={chart.title}>
-                                
-                                <span className="chart-level">
-                                    {scale[chart.level - 1]}
-                                </span>
+                {filteredCharts.map((chart) => (
+                    <div className="about-chart-row" key={chart.title}>
 
-                                <div className="chart-bar">
-                                    {scale.map((_, index) => (
-                                        <span
-                                            key={index}
-                                            className={`chart-box ${ index < chart.level 
-                                                ? "filled"
-                                                : ""
-                                            }`}/>
-                                    ))}
-                                </div>
+                        <h3 className="about-chart-title">
+                            {chart.title}
+                        </h3>
+
+                        <div className="chart-bar-wrapper">
+                            <span className="chart-level">
+                                {scale[chart.level - 1]}
+                            </span>
+
+                            <div className="chart-bar">
+                                {scale.map((_, index) => (
+                                    <span
+                                        key={index} 
+                                        className={`chart-box ${
+                                            index < chart.level ? 
+                                            "filled" : ""
+                                        }`}
+                                    />
+                                ))}
+                            </div>
                         </div>
-                    ))}
-                </div>
+
+                    </div>
+                ))}
+
             </div>
         </div>
     );

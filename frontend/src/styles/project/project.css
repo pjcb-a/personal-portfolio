@@ -8,7 +8,8 @@
 .project-grid-container {
     display: flex;
     flex-direction: column;
-    margin: 0 1.5rem;
+    margin: 5rem;
+    gap: 4rem;
 }
 
 .project-grid-cards {
@@ -27,9 +28,9 @@
     grid-template-columns: 1fr 1.9fr 1fr;
     align-items: center;
     width: 100%;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 0;
     gap: 2rem;
-    margin: 0.5rem 0;
+    margin-bottom: 1rem;
 }
 
 .project-grid-header-subtitle {
@@ -49,7 +50,7 @@
 
 .project-grid-header-description {
     justify-self: center;
-    width: 100%;
+    max-width: 25rem;
 }
 
 .project-grid-header-button {
@@ -78,7 +79,7 @@
 }
 
 .project-category {
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 .project-card[data-project-category="creative-media"] {
@@ -157,8 +158,8 @@
     width: 100%;
     aspect-ratio: 1/1;
     overflow: hidden;
-    background-color: var(--project-accent-soft);
-    border: var(--border-standard);
+    /* background-color: var(--project-accent-soft); */
+    /* border: var(--border-standard); */
     isolation: isolate;
 }
 
@@ -198,45 +199,6 @@
     transition:
       filter var(--transition-standard),
       transform var(--transition-standard);
-}
-
-.project-card-preview {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 1rem;
-    color: var(--color-text);
-}
-
-.project-card-preview-index,
-.project-card-preview-category {
-    font-family: var(--font-body);
-    font-size: 0.9rem;
-    line-height: 1.2;
-    text-transform: uppercase;
-}
-
-.project-card-preview-index {
-    align-self: flex-end;
-    color: var(--project-accent);
-    font-size: 1.4rem;
-}
-
-.project-card-preview-title {
-    max-width: 10ch;
-    font-family: var(--font-body);
-    font-size: 2.25rem;
-    font-weight: 800;
-    line-height: 0.95;
-    text-transform: uppercase;
-    transition: transform var(--transition-standard);
-}
-
-.project-card-preview-category {
-    color: var(--color-muted);
-    letter-spacing: 0;
 }
 
 .project-card:hover .project-card-image::after,
@@ -576,23 +538,48 @@
 .project-grid-card-image {
     position: relative;
     width: 100%;
-    aspect-ratio: 2.5 / 1;
+    aspect-ratio: 4/3;
     overflow: hidden;
-    background-color: var(--color-muted);
+    isolation: isolate;
+    background-color: var(--color-accent-light);
     border-bottom: var(--border-standard);
-    flex-shrink: 0;
+}
+
+.project-grid-card-image img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    transition:
+        transform var(--transition-standard),
+        filter var(--transition-standard);
 }
 
 .project-grid-card:hover .project-grid-card-image img {
     transform: scale(1.03);
 }
 
+.project-grid-card-image::before {
+    content: "";
+    position: absolute;
+    inset: -1rem;
+    background-image: var(--project-image);
+    background-size: cover;
+    background-position: center;
+    filter: blur(18px);
+    transform: scale(1.1);
+    opacity: 0.35;
+    z-index: 0;
+}
+
 .project-grid-card img {
-    display: block;
+    /* display: block; */
+    object-fit: contain;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center;
     transition:
         transform var(--transition-fast),
         filter var(--transition-fast);
@@ -690,4 +677,57 @@
   background-color: var(--color-accent);
   transform: var(--border-thick);
   box-shadow: var(--shadow-small);
+}
+
+.project-grid-card-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.88) 0%,
+        rgba(0, 0, 0, 0.55) 45%,
+        rgba(0, 0, 0, 0) 100%
+    );
+  color: var(--color-background);
+  opacity: 0;
+
+  transition: 
+    opacity var(--transition-standard),
+    transform var(--transition-standard);
+}
+
+.project-grid-card-overlay h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.8rem;
+  line-height: 1;
+  letter-spacing: 0.2rem;
+}
+
+.project-grid-card-overlay span {
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.08rem;
+  font-family: var(--font-heading);
+  color: var(--color-accent);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.project-grid-card-overlay p {
+  max-width: 32rem;
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  letter-spacing: 0.06rem;
+  color: var(--color-accent-light);
+}
+
+.project-grid-card:hover .project-grid-card-overlay,
+.project-grid-card:focus-within .project-grid-card-overlay {
+    opacity: 1;
+    transform: translateY(0);
 }

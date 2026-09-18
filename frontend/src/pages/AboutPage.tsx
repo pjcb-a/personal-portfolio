@@ -10,6 +10,8 @@ import AboutStats from "../components/about/AboutStats";
 import Cta from "../components/common/Cta";
 import AboutStudy from "../components/about/AboutStudy";
 
+import resumePdf from "../assets/files/John_Paul_Jacob_Resume.pdf"
+
 export default function AboutPage() {
     return(
         <section className="about-container">
@@ -20,7 +22,7 @@ export default function AboutPage() {
                     <PageTitle pageIndex={1}/>
                     <Button
                         label="Download Resume"
-                        href="src\assets\files\John_Paul_Jacob_Resume.pdf"
+                        href={resumePdf}
                         variant="secondary"
                         icon={<ArrowUpRight size={18}/>}
                         external={true}

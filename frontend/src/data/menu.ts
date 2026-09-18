@@ -1,4 +1,5 @@
 import type { MenuItem } from "../types/menu"
+import resumePdf from "../assets/files/John_Paul_Jacob_Resume.pdf"
 
 export const menuItems: MenuItem[] = [
     {
@@ -29,7 +30,7 @@ export const menuItems: MenuItem[] = [
         id: "resume",
         kind: "external",
         label: "Resume",
-        href: "src/assets/files/John_Paul_Jacob_Resume.pdf",
+        href: resumePdf,
         openInNewTab: true,
         download: true,
     },
