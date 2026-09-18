@@ -1,6 +1,8 @@
 import { Dot } from "lucide-react";
 import "../../styles/about/about.css"
 
+import adnuLogo from "../../assets/images/Ateneo_de_Naga_University_logo.png"
+
 export default function AboutStudy() {
     return(
         <div className="about-study-container">
@@ -14,7 +16,7 @@ export default function AboutStudy() {
 
             <div className="about-study-content">
                 <div className="study-logo">
-                    <img src="src/assets/images/Ateneo_de_Naga_University_logo.png" alt="Ateneo de Naga University"/>
+                    <img src={adnuLogo} alt="Ateneo de Naga University"/>
                 </div>
 
                 <div className="school-title">
