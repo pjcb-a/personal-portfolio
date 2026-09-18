@@ -11,7 +11,7 @@ export default function DevelopmentCard({
     project, }: DevelopmentCardProps) {
         return (
             <article className="project-grid-card">
-                <a href={`/projects/${project.link}`}>
+                <a href={project.link}>
                     <div className="project-grid-card-image">
                         <img
                             src={project.image}
