@@ -26,7 +26,7 @@
   --color-muted-accent: #F6F6F6;
   --color-accent: #7d9277;
   --color-accent-hover: #a4d596;
-  --color-accent-bar: #0FBF3E;
+  --color-accent-bar: #7ad492;
   --color-accent-light: #dce4d8;
   --color-danger: #e05050;
 
@@ -45,7 +45,7 @@
   --shadow-medium-accent: 3px 3px 0 var(--color-accent);
   --shadow-medium-hover: 4px 4px 0 var(--color-accent-hover);
   --shadow-large: 5px 5px 0 var(--color-text);
-  --shadow-large-accent: 7px 7px 0 var(--color-accent);
+  --shadow-large-accent: 5px 5px 0 var(--color-accent);
   --shadow-large-danger: 5px 5px 0 var(--color-danger);
 
   /* Typography */
