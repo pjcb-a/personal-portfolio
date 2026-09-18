@@ -1,5 +1,15 @@
 import type { Project } from "../types/project";
 
+import caresImage from "../assets/images/projects/cares.png"
+import subtrackImage from "../assets/images/projects/subtrack.png"
+import sdbsImage from "../assets/images/projects/adnul-sdbs.png"
+import techpassImage from "../assets/images/projects/techpass.png"
+import cnyImage from "../assets/images/projects/h-cny.png"
+import memoImage from "../assets/images/projects/memorandum.png"
+import clockImage from "../assets/images/projects/clock.png"
+import treesImage from "../assets/images/projects/trees.png"
+import laborImage from "../assets/images/projects/labor-day.png"
+
 export const projects: Project[] = [
   {
     id: 1,
@@ -26,7 +36,7 @@ export const projects: Project[] = [
       "React",
     ],
 
-    image: "/projects/cares/cover.png",
+    image: caresImage,
 
     featured: true,
   },
@@ -55,16 +65,16 @@ export const projects: Project[] = [
       "Canva",
     ],
 
-    image: "/projects/techpass/cover.png",
+    image: techpassImage,
 
     featured: true,
   },
 
   {
     id: 3,
-    slug: "supra-v8",
+    slug: "clock",
 
-    title: "Supra V8",
+    title: "clock",
     category: "poster",
     categoryLabel: "POSTERS",
 
@@ -72,17 +82,17 @@ export const projects: Project[] = [
     subtitle: "Personal Project",
 
     description:
-      "A poster showcasing my passion for cars and practicing my design skills further.",
+      "",
 
     role: [
       "Graphic Designer",
     ],
 
     tools: [
-      "Photoshop",
+      "Photoshop", "Canva"
     ],
 
-    image: "/projects/supra-v8/cover.png",
+    image: clockImage,
 
     featured: true,
   },
@@ -109,7 +119,7 @@ export const projects: Project[] = [
       "Photoshop", 
     ],
 
-    image: "/projects/forest/cover.png",
+    image: treesImage,
 
     featured: false,
   },
@@ -138,7 +148,7 @@ export const projects: Project[] = [
       "Vue",
     ],
 
-    image: "/projects/subtrack/cover.png",
+    image: subtrackImage,
 
     featured: false,
   },
@@ -160,15 +170,15 @@ export const projects: Project[] = [
       "Figma",
       "Vue"
     ],
-    image: "/projects/adnu-lsdbs/cover.png",
+    image: sdbsImage,
     featured: false,
   },
 
    {
     id: 7,
-    slug: "nature-1",
+    slug: "Labor Day",
 
-    title: "Sentimental Nature",
+    title: "Labor Day",
     category: "poster",
     categoryLabel: "POSTERS",
 
@@ -176,7 +186,7 @@ export const projects: Project[] = [
     subtitle: "Personal Project",
 
     description:
-      "A poster showcasing sentimental quotes while admiring nature in its raw form.",
+      "",
 
     role: [
       "Graphic Designer",
@@ -186,7 +196,7 @@ export const projects: Project[] = [
       "Photoshop", "Canva"
     ],
 
-    image: "/projects/nature-1/cover.png",
+    image: laborImage,
 
     featured: false,
   },
@@ -213,7 +223,7 @@ export const projects: Project[] = [
       "Canva"
     ],
 
-    image: "/projects/cny/cover.png",
+    image: cnyImage,
 
     featured: false,
   },
@@ -242,7 +252,7 @@ export const projects: Project[] = [
       "Canva"
     ],
 
-    image: "/projects/memo/cover.png",
+    image: memoImage,
 
     featured: false,
   },
