@@ -1,4 +1,5 @@
 import { Calendar, MapPin, PenTool, User } from "lucide-react";
+import profileImage from "../../assets/images/image.jpg"
 
 export default function AboutCard() {
     return(
@@ -14,7 +15,7 @@ export default function AboutCard() {
             <div className="about-card-container-content">
                 
                 <div className="about-card-container-image">
-                    <img src="/src/assets/images/image.jpg" alt="profile"/>
+                    <img src={profileImage} alt="profile"/>
                 </div>
 
                 
