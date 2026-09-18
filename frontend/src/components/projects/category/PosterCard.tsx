@@ -13,7 +13,7 @@ export default function PosterCard({
 }: PosterCardProps) {
     return (
         <article className="project-grid-card">
-            <a href={`/projects/${project.link}`}>
+            <a href={project.link}>
 
                 <div className="project-grid-card-image"
                 style={{
