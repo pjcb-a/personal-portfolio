@@ -1,14 +1,17 @@
 .about-container-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 0.85fr 1.15fr;
     justify-content: center;
+    align-items: stretch;
     border-bottom: var(--border-thick);
+    padding-bottom: 5rem;
     margin: 1rem;
 }
 
 .about-container-intro {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 /* Start of about page */
@@ -16,7 +19,7 @@
     align-items: center;
     border: var(--border-medium);
     box-shadow: var(--shadow-medium);
-    margin: 2rem;
+    margin: 0 2.5rem;
 }
 
 .about-card-container-header {
@@ -106,6 +109,7 @@
 .about-container-skills {
     display: flex;
     flex-direction: column;
+    margin-top: 5rem;
 }
 
 .about-container-skills-header {
@@ -333,7 +337,7 @@
 .about-study-container {
     display: flex;
     flex-direction: column;
-    margin: 2rem 3rem;
+    margin: 5rem 2rem;
 }
 
 .about-study-title {
@@ -351,9 +355,9 @@
 .about-study-content {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     border: var(--border-thick);
     padding: 1rem;
     box-shadow: var(--shadow-large);
